@@ -21,13 +21,28 @@
       <div class="info">
         <ul>
           <li class="contact-us"><a href="Contact.php">Contact Us</a></li>
-          <li class="main-req"><a>Maintenance Request</a></li>
-          <li class="Pay"><a>Pay Online</a></li>
+          <li class="apply"><a>apply</a></li>
         </ul>
         <hr class="info-line">
       </div>
       <div>
         <img class="image" src="GreenHouse.jpg" alt="Residential Green House">
+      </div>
+      <div class="image-list">
+        <ul>
+          <li>
+            <a>
+              <img class="image-item" src="GreenHouse.jpg">
+
+            </a>
+          </li>
+          <li>
+            <a><img class="image-item" src="white house.jpg"></a>
+          </li>
+          <li>
+            <a><img class="image-item" src="RedHouse.jpg"></a>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="footer">

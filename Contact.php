@@ -18,16 +18,9 @@
       </ul >
     </div>
     <div class="content">
-      <div class="info">
-        <ul>
-          <li class="contact-us"><a href="Contact.php">Contact Us</a></li>
-          <li class="main-req"><a>Maintenance Request</a></li>
-          <li class="Pay"><a>Pay Online</a></li>
-        </ul>
-        <hr class="info-line">
-      </div>
-      <div>
-        <img class="image" src="GreenHouse.jpg" alt="Residential Green House">
+      <div class="contact">
+          <center>To contact us email us at example@email.com or call us at 123-456-7890
+          </center>
       </div>
     </div>
     <div class="footer">
