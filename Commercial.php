@@ -22,7 +22,7 @@
       <div class="info">
         <ul>
           <li class="contact-us"><a href="Contact.php">Contact Us</a></li>
-          <li class="apply"><a>apply</a></li>
+          <li class="apply"><a href="log-in.php">apply</a></li>
         </ul>
         <hr class="info-line">
       </div>
@@ -46,8 +46,10 @@
       </div>
     </div>
     <div class="footer">
-      <hr class="footer-line">
-      <li class="first">@Jonathan Aparicio</li>
+      <ul>
+        <li class="footer-text">@Jonathan Aparicio</li>
+        <li class="footer-text"><a href="Contact.php">Contact</a></li>
+      </ul>
     </div>
   </body>
 </html>

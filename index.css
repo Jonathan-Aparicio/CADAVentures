@@ -123,6 +123,7 @@ text-decoration:underline;
 
 .footer > ul > li {
   display: inline;
+  border-left: solid 1px #758190;
 }
 
 .footer-text{

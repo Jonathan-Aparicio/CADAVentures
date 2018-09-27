@@ -1,8 +1,8 @@
 <html>
   <head>
     <title>CADAVenturs - Rentals</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link rel="icon" href="favicon.ico" type="image/png"/>
   </head>
   <body>
     <div class="banner">
@@ -22,8 +22,8 @@
       <div class="info">
         <ul>
           <li class="contact-us"><a href="Contact.php">Contact Us</a></li>
-          <li class="main-req"><a>Maintenance Request</a></li>
-          <li class="Pay"><a>Pay Online</a></li>
+          <li class="main-req"><a href="Maintence.php">Maintenance Request</a></li>
+          <li class="Pay"><a href="log-in.php">Pay Online</a></li>
         </ul>
         <hr class="info-line">
       </div>
@@ -32,8 +32,10 @@
       </div>
     </div>
     <div class="footer">
-      <hr class="footer-line">
-      <li class="first">@Jonathan Aparicio</li>
+      <ul>
+        <li class="footer-text">@Jonathan Aparicio</li>
+        <li class="footer-text"><a href="Contact.php">Contact</a></li>
+      </ul>
     </div>
   </body>
 </html>
