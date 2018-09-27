@@ -1,0 +1,63 @@
+body {
+  background-color: #DDD;
+}
+
+
+
+.info > ul{
+  font-size: 20px;
+    text-align: center;
+}
+
+.info > ul > li{
+  display: inline;
+}
+
+.info > ul > li > b{
+  padding: 0 10px;
+  line-height: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: .1em;
+}
+
+.info > ul > li > b:hover{
+  color: #F36900;
+text-decoration:underline;
+}
+
+
+.nav-bar{
+  background-color: black;
+  font-weight: 900;
+  font-size: 19px;
+  font-family: "Open Sans Condensed";
+  letter-spacing: 8px;
+  text-transform: uppercase;
+
+}
+
+.nav-bar > ul{
+  padding: 10;
+  margin-left: 43px;
+  text-align: center;
+}
+
+.nav-bar > ul > li{
+  display: inline;
+
+}
+
+.nav-bar > ul > li > a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: inline;
+}
+
+.nav-bar > ul > li > a:hover{
+  color: #F36900;
+  text-decoration:underline;
+}
