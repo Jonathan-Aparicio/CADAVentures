@@ -2,6 +2,7 @@
   <head>
     <title>CADAVenturs - Rentals</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
   </head>
   <body>
     <div class="banner">
@@ -19,13 +20,17 @@
     </div>
     <div class="content">
       <div class="contact">
-          <center>To contact us email us at example@email.com or call us at 123-456-7890
-          </center>
+          <center><p>
+            Thank you for visting our website. if you have questions about our rentals please
+            contact us email us at example@email.com or call us at 123-456-7890
+          </p></center>
       </div>
     </div>
     <div class="footer">
-      <hr class="footer-line">
-      <li class="first">@Jonathan Aparicio</li>
+      <ul>
+        <li class="footer-text">@Jonathan Aparicio</li>
+        <li class="footer-text"><a href="Contact.php">Contact</a></li>
+      </ul>
     </div>
   </body>
 </html>
