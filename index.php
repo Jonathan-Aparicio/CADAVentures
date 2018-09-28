@@ -22,7 +22,7 @@
       <div class="info">
         <ul>
           <li class="contact-us"><a href="Contact.php">Contact Us</a></li>
-          <li class="main-req"><a href="Maintence.php">Maintenance Request</a></li>
+          <li class="main-req"><a href="log-in.php">Maintenance Request</a></li>
           <li class="Pay"><a href="log-in.php">Pay Online</a></li>
         </ul>
         <hr class="info-line">
