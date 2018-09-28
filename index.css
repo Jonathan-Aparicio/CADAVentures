@@ -94,9 +94,39 @@ text-decoration:underline;
   margin: right;
 }
 
-/*
-.image-list > ul > li > a {
+span.forms{
   display: inline;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* .forms{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%
+}
+
+.forms > ul{
+  list-style: none;
+   margin: 0;
+   padding: 0;
+   display: inline-block;
+   width: 65%
+
+}
+
+.forms > ul > li{
+  display: inline-block;
+  list-style: none;
+  width: 65%
 } */
 
 
