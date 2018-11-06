@@ -24,9 +24,8 @@
         <input type="text" name="username" placeholder="user name" id="user"><br>
         <label for="pass">Password:<br>
         <input type="text" name="password" id="password" placeholder="pass">
-        <input type="submit"  value="Submit">
+        <input type="submit"  value="Register">
       </form>
-      <a href="Register.php">Register</a>
     </div>
     <div class="footer">
       <ul>
