@@ -41,15 +41,29 @@ class Dao {
     }else{
       return false;
     }
-
   }
+
+  public function checkLog($username, $password){
+    $conn = $this->getConnection();
+    $query = "select * from user where Email = :email && Password = :pass";
+    $q = $conn->prepare($query);
+    $q->bindParam(":email",$username);
+    $q->bindParam(":pass",$password);
+    $q->execute();
+
+    if($q->fetch()){
+      return true;
+    }else{
+      return false;
+    }
+  }
+
   public function getUser($username)
 	{
 		$conn = $this->getConnection();
 		$stmt = $conn->prepare("SELECT * FROM user WHERE Email = :uname");
 		$stmt->bindParam(":uname", $username);
 		$stmt->execute();
-    echo $stmt->fetch();
 		return $stmt->fetch();
 	}
   //

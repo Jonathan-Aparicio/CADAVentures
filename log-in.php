@@ -25,7 +25,7 @@ unset($_SESSION['message']);
       </ul >
     </div>
     <div class="content">
-      <form class="log">
+      <form class="log" method="POST" action="log-in-handler.php">
         <label for="user">User Name:</label>
         <input type="text" name="username" placeholder="user name" id="user"><br>
         <label for="pass">Password:<br>
