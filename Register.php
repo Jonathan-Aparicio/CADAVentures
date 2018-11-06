@@ -10,10 +10,7 @@
       <?php require_once "nav.php";?>
     </div>
 
-    <div class='message'>
-      <h2><?php echo isset($_SESSION['message']) ? $_SESSION['message'] : '';
-      unset($_SESSION['message']); ?></h2>
-    </div>
+
 
     <div class="content">
       <form class="log" method="POST" action="Register-handler.php">
@@ -25,6 +22,10 @@
         <input type="password" name="Cpassword" id="Cpassword" placeholder="pass">
         <input type="submit"  value="Register">
       </form>
+    </div>
+    <div class='message'>
+      <h2><?php echo isset($_SESSION['message']) ? $_SESSION['message'] : '';
+      unset($_SESSION['message']); ?></h2>
     </div>
     <div class="footer">
       <ul>
