@@ -25,7 +25,9 @@
 
   if(empty($_POST['Cpassword'])){
     $status = false;
-  }else
+  }else if($password == $Cpassword){
+    $status = false;
+  }
 
 
 
