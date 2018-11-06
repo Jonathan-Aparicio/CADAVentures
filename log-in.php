@@ -1,8 +1,14 @@
 <?php
 session_start();
 
-$message = isset($_SESSION['message']) ? $_SESSION['message'] : '';
-unset($_SESSION['message']);
+  if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"]) {
+    header("Location:index.php");
+  }
+
+  // $email = "";
+  // if (isset($_SESSION["email_preset"])) {
+  //   $email = $_SESSION["email_preset"];
+  // }
 ?>
 <html>
   <head>
