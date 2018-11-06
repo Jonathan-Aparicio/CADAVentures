@@ -11,12 +11,14 @@
   if(empty($_POST['username'])){
     $status = false;
   }else if(!filter_var($username, FILTER_VALIDATE_EMAIL)){
+    echo "Bad username";
     $status = false;
   }
 
   if(empty($_POST['password'])){
     $status = false;
   }else if(!preg_match('/([A-Z]|[0-9]|[a-z]){4,8}/')){
+    echo "Bad pasword";
     $status = false;
   }
 
