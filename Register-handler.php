@@ -9,6 +9,7 @@ if($dao->checkExists($username)){
 
 }else{
   $dao->addUser($username,$password);
-  header("Location:http://www.cadaventures.com/index.php");
+  header("Location: index.php");
+  exit;
 }
 ?>
