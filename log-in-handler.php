@@ -7,7 +7,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 
 if($dao->checkLog($username,$password)){
-  echo "log in"
+  echo "log in";
 }else{
   echo "not log in";
 }
