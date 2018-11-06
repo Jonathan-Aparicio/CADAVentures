@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+$message = isset($_SESSION['message']) ? $_SESSION['message'] : '';
+unset($_SESSION['message']);
+?>
 <html>
   <head>
     <title>CADAVenturs - Rentals</title>
@@ -19,7 +25,7 @@
       </ul >
     </div>
     <div class="content">
-      <form class="log">
+      <form class="log" method="post" action="Register-handler.php">
         <label for="user">User Name:</label>
         <input type="text" name="username" placeholder="user name" id="user"><br>
         <label for="pass">Password:<br>
