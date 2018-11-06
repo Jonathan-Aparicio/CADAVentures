@@ -1,3 +1,3 @@
 <?php
 session_start();
- echo $_SESSION["messag"']; ?>
+ echo $_SESSION["messag"]; ?>
