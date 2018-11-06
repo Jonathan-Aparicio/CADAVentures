@@ -9,5 +9,6 @@ if($dao->checkExists($username)){
 
 }else{
   $dao->addUser($username,$password);
+  header("Location:index.php");
 }
 ?>
