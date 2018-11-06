@@ -37,11 +37,13 @@
   if($dao->checkExists($username)){
   echo "user allready exist";
   $_SESSION['message'] = "This email is already in use.";
-  header("Location: Register.php");
+  echo $_SESSION['message'];
+  //header("Location: Register.php");
 }else if($status == false){
-  $_SESSION['message'] =  "Bad username or password.";
+  $_SESSION['message'] =  "Bad email or password.";
   echo "bad username or password";
-header("Location: Register.php");
+    echo $_SESSION['message'];
+//header("Location: Register.php");
 }else{
     $dao->addUser($username,$password);
     header("Location: log-in.php");
