@@ -43,6 +43,15 @@ class Dao {
     }
 
   }
+  public function getUser($username)
+	{
+		$conn = $this->getConnection();
+		$stmt = $conn->prepare("SELECT * FROM user WHERE Email = :uname");
+		$stmt->bindParam(":uname", $username);
+		$stmt->execute();
+    echo $stmt->fetch();
+		return $stmt->fetch();
+	}
   //
   // public function getProducts () {
   //   $conn = $this->getConnection();
