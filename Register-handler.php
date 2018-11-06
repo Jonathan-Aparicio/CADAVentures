@@ -20,6 +20,7 @@
   }else if(!preg_match('/([A-Z]|[0-9]|[a-z]){4,8}/',$password)){
     echo "Bad pasword";
     $status = false;
+
   }
 
   if(empty($_POST['Cpassword'])){
@@ -33,8 +34,12 @@
 
   if($dao->checkExists($username)){
   echo "user allready exist";
+  $_SESSION['message'] = "This email is already in use.";
+  header("Location: Register.php");
 }else if($status == false){
+  $_SESSION['message'] =  "Bad username or password.";
   echo "bad username or password";
+header("Location: Register.php");
 }else{
     $dao->addUser($username,$password);
     header("Location: log-in.php");

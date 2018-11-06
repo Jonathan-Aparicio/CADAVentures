@@ -1,9 +1,3 @@
-<?php
-session_start();
-
-$message = isset($_SESSION['message']) ? $_SESSION['message'] : '';
-unset($_SESSION['message']);
-?>
 <html>
   <head>
     <title>CADAVenturs - Rentals</title>
@@ -12,7 +6,9 @@ unset($_SESSION['message']);
   </head>
   <body>
     <div>
-      <?php require_once "nav.php";?>
+      <?php require_once "nav.php";
+      $message = isset($_SESSION['message']) ? $_SESSION['message'] : '';
+      unset($_SESSION['message']);?>
     </div>
     <!-- <div class="nav-bar" id="nav-bar">
       <ul >
@@ -24,6 +20,11 @@ unset($_SESSION['message']);
         <li class="Industrial"><a href="Industrial.php">Industrial</a></li>
       </ul >
     </div> -->
+    <?php if(!empty($message)) { ?>
+    <div class='message'>
+      <h2><?php echo $message; ?></h2>
+    </div>
+  <?php } ?>
     <div class="content">
       <!-- <form action="http://webster.cs.washington.edu/params.php"> -->
       <form class="log" method="POST" action="Register-handler.php">
