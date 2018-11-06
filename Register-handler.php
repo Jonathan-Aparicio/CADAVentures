@@ -17,7 +17,7 @@
 
   if(empty($_POST['password'])){
     $status = false;
-  }else if(!preg_match('/([A-Z]|[0-9]|[a-z]){4,8}/'),$password){
+  }else if(!preg_match('/([A-Z]|[0-9]|[a-z]){4,8}/',$password)){
     echo "Bad pasword";
     $status = false;
   }
