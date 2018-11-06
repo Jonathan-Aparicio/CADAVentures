@@ -26,7 +26,7 @@
         <ul>
           <li class="contact-us"><a href="Contact.php">Contact Us</a></li>
           <li class="main-req">
-            <a href="<<?php if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"]) {
+            <a href="<?php if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"]) {
               echo "Maintence.php";
             }else{
               echo "log-in.php";
