@@ -1,4 +1,13 @@
 <?php
-session_start();
-echo "in handler"
+include 'Dao.php'
+$dao = new Dao();
+
+$username = $_POST['username'];
+$password = $_POST['password'];
+
+if($dao->checkExists($username)){
+
+}else{
+  $dao->addUser($username,$password);
+}
 ?>

@@ -13,6 +13,34 @@ class Dao {
       new PDO("mysql:host={$this->host};dbname={$this->db}", $this->user,
           $this->pass);
   }
+
+  public function addUser($username, $password){
+     $conn = $this->getConnection();
+     $saveQuery =
+           "INSERT INTO user
+           (username, password)
+           VALUES
+           (:name, :password)";
+           $q = $conn->prepare($saveQuery);
+            $q->bindParam(":name", $username);
+            $q->bindParam(":password", $password);
+            $q->execute();
+  }
+
+  public function checkExists($username){
+    $conn = $this->getConnection();
+    $query = "select * from user where Email = :email"
+    $q = $conn->prepare($query);
+    $q->bindParam(":email",$username);
+    $q->execute();
+
+    if($q->fetch()){
+      return true;
+    }else{
+      return false;
+    }
+
+  }
   //
   // public function getProducts () {
   //   $conn = $this->getConnection();
