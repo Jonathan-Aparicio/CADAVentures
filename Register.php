@@ -26,7 +26,7 @@ unset($_SESSION['message']);
     </div>
     <div class="content">
       <!-- <form action="http://webster.cs.washington.edu/params.php"> -->
-      <form class="log" method="post" action="Register-handler.php">
+      <form class="log" method="POST" action="Register-handler.php">
         <label for="user">User Name:</label>
         <input type="text" name="username" placeholder="user name" id="user"><br>
         <label for="pass">Password:<br>
