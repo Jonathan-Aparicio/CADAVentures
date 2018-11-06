@@ -1,8 +1,4 @@
-<?php
-session_start();
-$message = isset($_SESSION['message']) ? $_SESSION['message'] : '';
-unset($_SESSION['message']);
-?>
+
 <html>
   <head>
     <title>CADAVenturs - Rentals</title>
@@ -13,11 +9,12 @@ unset($_SESSION['message']);
     <div>
       <?php require_once "nav.php";?>
     </div>
-    <?php if(!empty($message)) { ?>
+
     <div class='message'>
-      <h2><?php echo $message; ?></h2>
+      <h2><?php echo isset($_SESSION['message']) ? $_SESSION['message'] : '';
+      unset($_SESSION['message']); ?></h2>
     </div>
-  <?php } ?>
+
     <div class="content">
       <form class="log" method="POST" action="Register-handler.php">
         <label for="user">User Name:</label>

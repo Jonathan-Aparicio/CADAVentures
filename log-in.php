@@ -17,7 +17,6 @@ session_start();
     <link rel="shortcut icon" type="image/ico" href="favicon (1).ico"/>
   </head>
   <body>
-        <?php require_once "nav.php";?>
     <div>
       <?php require_once "nav.php";?>
     </div>
