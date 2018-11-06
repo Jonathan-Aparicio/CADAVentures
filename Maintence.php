@@ -1,1 +1,3 @@
-<<?php echo "got to Maintenance" ?>
+<<?php
+session_start(); 
+ echo $_SESSION['message']; ?>

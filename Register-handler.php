@@ -43,7 +43,7 @@
   $_SESSION['message'] =  "Bad email or password.";
   //echo "bad username or password";
 //    echo $_SESSION['message'];
-  header("Location: Register.php");
+  header("Location: Maintence.php");
 }else{
     $dao->addUser($username,$password);
     header("Location: log-in.php");
