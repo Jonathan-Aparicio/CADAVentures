@@ -10,7 +10,7 @@ $password = $_POST['password'];
 // echo "user allready exist";
 // }else{
   $dao->addUser($username,$password);
-  header("Location: index.php");
+  //header("Location: index.php");
   // exit;
 // }
 ?>
