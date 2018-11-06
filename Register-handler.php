@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 require_once "Dao.php";
 $dao = new Dao();
 
@@ -11,6 +11,6 @@ echo "user allready exist";
 }else{
   $dao->addUser($username,$password);
   header("Location: index.php");
-  exit;
+  // exit;
 }
 ?>
