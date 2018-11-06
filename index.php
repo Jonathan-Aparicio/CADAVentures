@@ -25,7 +25,12 @@
       <div class="info">
         <ul>
           <li class="contact-us"><a href="Contact.php">Contact Us</a></li>
-          <li class="main-req"><a href="log-in.php">Maintenance Request</a></li>
+          <li class="main-req">
+            <a href="<<?php if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"]) {
+              echo "Maintence.php";
+            }else{
+              echo "log-in.php";
+            } ?>">Maintenance Request</a></li>
           <li class="Pay"><a href="log-in.php">Pay Online</a></li>
         </ul>
         <hr class="info-line">
