@@ -19,7 +19,7 @@ class Dao {
      $conn = $this->getConnection();
      $saveQuery =
            "INSERT INTO user
-           (username, password)
+           (Email, Password)
            VALUES
            (:name, :password)";
            $q = $conn->prepare($saveQuery);
