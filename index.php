@@ -3,7 +3,7 @@
     <title>CADAVenturs - Rentals</title>
     <link rel="stylesheet" type="text/css" href="index.css"/>
     <link rel="shortcut icon" type="image/ico" href="favicon (1).ico"/>
-    ><?php  session_start();?>
+    <?php  session_start();?>
   </head>
   <body>
     <div>
@@ -31,7 +31,7 @@
             <a href="
             <?php if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"]) {
               echo "Maintenance.php";
-            }else if(isset($_SESSION["access_granted"]) && !$_SESSION["access_granted"]){
+            }else{
               echo "log-in.php";
             } ?>"
 
