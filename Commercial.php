@@ -5,7 +5,10 @@
     <link rel="shortcut icon" type="image/ico" href="favicon (1).ico"/>
   </head>
   <body>
-    <div class="banner">
+    <div>
+      <?php require_once "nav.php";?>
+    </div>
+    <!-- <div class="banner">
       <img class="logo" src="logo.png">
     </div>
     <div class="nav-bar" id="nav-bar">
@@ -17,7 +20,7 @@
         <li class="Commercial"><a href="Commercial.php">Commercial</a></li>
         <li class="Industrial"><a href="Industrial.php">Industrial</a></li>
       </ul >
-    </div>
+    </div> -->
     <div class="content">
       <div class="info">
         <ul>
