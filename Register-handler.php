@@ -1,5 +1,5 @@
 <?php
-include 'Dao.php'
+require_once "Dao.php";
 $dao = new Dao();
 
 $username = $_POST['username'];
