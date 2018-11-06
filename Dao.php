@@ -29,7 +29,7 @@ class Dao {
 
   public function checkExists($username){
     $conn = $this->getConnection();
-    $query = "select * from user where Email = :email"
+    $query = "select * from user where Email = :email";
     $q = $conn->prepare($query);
     $q->bindParam(":email",$username);
     $q->execute();
