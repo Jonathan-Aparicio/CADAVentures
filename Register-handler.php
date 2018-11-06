@@ -10,7 +10,8 @@ if($dao->checkExists($username)){
 echo "user allready exist";
 }else{
   $dao->addUser($username,$password);
-  echo getUser($username);
+  $dao->getUser($username);
+  //echo $dao->getUser($username);
   //header("Location: index.php");
   // exit;
 }

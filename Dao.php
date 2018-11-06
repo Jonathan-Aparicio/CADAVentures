@@ -15,7 +15,7 @@ class Dao {
   }
 
   public function addUser($username, $password){
-    echo "start add user";
+
      $conn = $this->getConnection();
      $saveQuery =
            "INSERT INTO user
@@ -26,7 +26,7 @@ class Dao {
             $q->bindParam(":name", $username);
             $q->bindParam(":password", $password);
             $q->execute();
-            echo "done adding user";
+
   }
 
   public function checkExists($username){
