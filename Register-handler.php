@@ -32,7 +32,7 @@
   if($dao->checkExists($username)){
   echo "user allready exist";
 }else if($status == false){
-  echo "bad username or password"
+  echo "bad username or password";
 }else{
     $dao->addUser($username,$password);
     header("Location: log-in.php");
