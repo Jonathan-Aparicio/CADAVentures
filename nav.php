@@ -16,8 +16,6 @@
       <?php else: ?>
         <li class="log-in"><a href="log-in.php">log in</a></li>
       <?php endif; ?>
-      <!-- <li class="log-in"><a href="log-in.php">log in</a></li>
-      <li class="log-out"><a href="log-out.php">log out</a></li> -->
     </ul >
   </div>
 </bod>

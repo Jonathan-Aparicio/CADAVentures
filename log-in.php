@@ -17,10 +17,11 @@ session_start();
     <link rel="shortcut icon" type="image/ico" href="favicon (1).ico"/>
   </head>
   <body>
-    <div class="banner">
-      <img class="logo" src="logo.png">
+        <?php require_once "nav.php";?>
+    <div>
+      <?php require_once "nav.php";?>
     </div>
-    <div class="nav-bar" id="nav-bar">
+    <!-- <div class="nav-bar" id="nav-bar">
       <ul >
         <li class="Home" id+"current page">
           <a href="index.php"> Home</a>
@@ -29,13 +30,13 @@ session_start();
         <li class="Commercial"><a href="Commercial.php">Commercial</a></li>
         <li class="Industrial"><a href="Industrial.php">Industrial</a></li>
       </ul >
-    </div>
+    </div> -->
     <div class="content">
       <form class="log" method="POST" action="log-in-handler.php">
         <label for="user">User Name:</label>
         <input type="text" name="username" placeholder="user name" id="user"><br>
         <label for="pass">Password:<br>
-        <input type="text" name="password" id="password" placeholder="pass">
+        <input type="password" name="password" id="password" placeholder="pass">
         <input type="submit"  value="Submit">
       </form>
       <a href="Register.php">Register</a>

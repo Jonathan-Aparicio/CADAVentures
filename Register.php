@@ -11,10 +11,10 @@ unset($_SESSION['message']);
     <link rel="shortcut icon" type="image/ico" href="favicon (1).ico"/>
   </head>
   <body>
-    <div class="banner">
-      <img class="logo" src="logo.png">
+    <div>
+      <?php require_once "nav.php";?>
     </div>
-    <div class="nav-bar" id="nav-bar">
+    <!-- <div class="nav-bar" id="nav-bar">
       <ul >
         <li class="Home" id+"current page">
           <a href="index.php"> Home</a>
@@ -23,7 +23,7 @@ unset($_SESSION['message']);
         <li class="Commercial"><a href="Commercial.php">Commercial</a></li>
         <li class="Industrial"><a href="Industrial.php">Industrial</a></li>
       </ul >
-    </div>
+    </div> -->
     <div class="content">
       <!-- <form action="http://webster.cs.washington.edu/params.php"> -->
       <form class="log" method="POST" action="Register-handler.php">
@@ -31,6 +31,8 @@ unset($_SESSION['message']);
         <input type="text" name="username" placeholder="user name" id="user"><br>
         <label for="pass">Password:<br>
         <input type="password" name="password" id="password" placeholder="pass">
+        <label for="pass">Confrim Password:<br>
+        <input type="password" name="Cpassword" id="Cpassword" placeholder="pass">
         <input type="submit"  value="Register">
       </form>
     </div>
