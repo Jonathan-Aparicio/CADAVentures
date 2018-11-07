@@ -45,16 +45,12 @@
     }else {
       echo "add user ";
       $dao->addUser($username,$password);
-      // header("Location: log-in.php");
+      header("Location: log-in.php");
       exit;
     }
   }
-  echo "bad ";
-  foreach($messages as $message){
-    echo "$message";
-  }
-    $_SESSION['message'] = $messages;
-    // header("Location: Register.php");
+    $_SESSION['message'][] = $messages;
+    header("Location: Register.php");
     exit;
 
 ?>
