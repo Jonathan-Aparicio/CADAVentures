@@ -41,17 +41,14 @@
   if($status){
     if($dao->checkExists($username)){
       $messages[] = "THIS EMAIL IS ALREADY IN USE";
-      $_SESSION['message'] = $messages;
-      header("Location: Register.php");
-      exit;
     }else {
       $dao->addUser($username,$password);
       header("Location: log-in.php");
       exit;
     }
-  }else {
+  }
     $_SESSION['message'] = $messages;
     header("Location: Register.php");
     exit;
-  }
+  
 ?>
