@@ -33,7 +33,7 @@
   if(empty($_POST['Cpassword'])){
     $status = false;
     $messages[] = "ENTER CONFORMATION PASSWORD";
-  }else if($password == $Cpassword){
+  }else if(strcmp($password,$Cpassword)!=0){
     $messages[] = "PASSWORDS DO NOT MATCH";
     $status = false;
   }
