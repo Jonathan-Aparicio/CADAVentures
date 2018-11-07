@@ -1,5 +1,5 @@
 <?php
-// session_start();
+  session_start();
   require_once "Dao.php";
   $dao = new Dao();
 
@@ -49,7 +49,7 @@
       exit;
     }
   }
-    $_SESSION['message'][] = $messages;
+    $_SESSION['message'] = $messages;
     header("Location: Register.php");
     exit;
 
