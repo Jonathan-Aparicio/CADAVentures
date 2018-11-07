@@ -1,1 +1,1 @@
-<?php echo $_SESSION['type']; echo $_SESSION['id']; ?>
+<?php echo $_POST['type']; echo $_POST['id']; ?>
