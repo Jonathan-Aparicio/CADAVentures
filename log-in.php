@@ -4,11 +4,6 @@ session_start();
   if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"]) {
     header("Location:index.php");
   }
-
-  // $email = "";
-  // if (isset($_SESSION["email_preset"])) {
-  //   $email = $_SESSION["email_preset"];
-  // }
 ?>
 <html>
   <head>
@@ -20,16 +15,7 @@ session_start();
     <div>
       <?php require_once "nav.php";?>
     </div>
-    <!-- <div class="nav-bar" id="nav-bar">
-      <ul >
-        <li class="Home" id+"current page">
-          <a href="index.php"> Home</a>
-        </li>
-        <li class="Residential"><a href="Residential.php">Residential</a></li>
-        <li class="Commercial"><a href="Commercial.php">Commercial</a></li>
-        <li class="Industrial"><a href="Industrial.php">Industrial</a></li>
-      </ul >
-    </div> -->
+
     <div class="content">
       <form class="log" method="POST" action="log-in-handler.php">
         <label for="user">User Name:</label>

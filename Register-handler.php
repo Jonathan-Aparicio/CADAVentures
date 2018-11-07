@@ -40,15 +40,18 @@
 
   if($status){
     if($dao->checkExists($username)){
+      echo "email in use ";
       $messages[] = "THIS EMAIL IS ALREADY IN USE";
     }else {
+      echo "add user ";
       $dao->addUser($username,$password);
-      header("Location: log-in.php");
+      // header("Location: log-in.php");
       exit;
     }
   }
+  echo "bad ";
     $_SESSION['message'] = $messages;
-    header("Location: Register.php");
+    // header("Location: Register.php");
     exit;
-  
+
 ?>
