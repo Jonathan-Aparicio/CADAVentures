@@ -50,6 +50,9 @@
     }
   }
   echo "bad ";
+  foreach($messages as $message){
+    echo "$message";
+  }
     $_SESSION['message'] = $messages;
     // header("Location: Register.php");
     exit;
