@@ -5,17 +5,40 @@ $dao = new Dao();
 
 $username = $_POST['username'];
 $password = $_POST['password'];
+$_SESSION['email']=$username;
+$status = true;
+$messages = array();
 
-if($dao->checkLog($username,$password)){
-  $_SESSION["access_granted"]=true;
-  header("Location: index.php");
-  echo "log in";
-}else{
-  $status = "Invalid username or password";
- $_SESSION["status"] = $status;
- $_SESSION["email_preset"] = $_POST["email"];
- $_SESSION["access_granted"] = false;
-
- header("Location:log-in.php");
+if(empty($_POST['username'])){
+  $status = false;
+  $messages[] = "ENTER A EMAIL";
+}else if(!filter_var($username, FILTER_VALIDATE_EMAIL)){
+  $messages[] = "ENTER A VALID EMAIL";
+  echo "Bad username";
+  $status = false;
 }
+
+if(empty($_POST['password'])){
+  $status = false;
+  $messages[] = "ENTER A PASSWORD";
+}else if(!preg_match('/([A-Z]|[0-9]|[a-z]){4,8}/',$password)){
+  echo "Bad pasword";
+  $messages[] = "ENTER A PASSWORD THAT IS 4-8 CHARACTERS LONG THAT CONTAINS ONLY UPPER AND
+  LOWER CASE CHARACTERS AND DIGGITS 0-9";
+  $status = false;
+
+}
+
+if($status){
+  if($dao->checkLog($username,$password)){
+    $_SESSION["access_granted"]=true;
+    header("Location: index.php");
+    exit;
+  }
+}
+ $_SESSION["access_granted"] = false;
+ $_SESSION['message']=$message;
+ header("Location:log-in.php");
+ exit;
+
 ?>

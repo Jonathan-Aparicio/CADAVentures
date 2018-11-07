@@ -26,7 +26,7 @@
     <div>
 			<?php
 			if(isset($_SESSION['message'])){
-				foreach($_SESSION['message'] as $message){
+				foreach(@$_SESSION['message'] as $message){
 					echo "<div class='message'>$message</div>";
 				}
 			}

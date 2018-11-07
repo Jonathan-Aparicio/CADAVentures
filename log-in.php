@@ -33,13 +33,23 @@ session_start();
     <div class="content">
       <form class="log" method="POST" action="log-in-handler.php">
         <label for="user">User Name:</label>
-        <input type="text" name="username" placeholder="user name" id="user"><br>
+        <input type="text" name="username" placeholder="Email" value="<?php echo @$_SESSION['email'];?>" id="user"><br>
         <label for="pass">Password:<br>
         <input type="password" name="password" id="password" placeholder="pass">
         <input type="submit"  value="Submit">
       </form>
       <a href="Register.php">Register</a>
     </div>
+    <div>
+      <?php
+      if(isset($_SESSION['message'])){
+        foreach(@$_SESSION['message'] as $message){
+          echo "<div class='message'>$message</div>";
+        }
+      }
+      unset($_SESSION['message']);
+    ?>
+  </div>
     <div class="footer">
       <ul>
         <li class="footer-text">@Jonathan Aparicio</li>
