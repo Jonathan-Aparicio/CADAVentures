@@ -22,10 +22,10 @@
       <div class="image-list">
         <ul>
           <li>
-            <a href="generalHouse.php">
+            <a href="generalHouse.php"<?php $_SESSION['type'] = "residential";
+                  $_SESSION['id'] = 0;?> >
               <img class="image-item" src="GreenHouse.jpg">
-              <?php $_SESSION['type'] = "residential";
-                    $_SESSION['id'] = 0;?>
+
             </a>
           </li>
           <li>
