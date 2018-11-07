@@ -8,19 +8,6 @@
     <div>
       <?php require_once "nav.php";?>
     </div>
-    <!-- <div class="banner">
-      <img class="logo" src="logo.png">
-    </div>
-    <div class="nav-bar" id="nav-bar">
-      <ul >
-        <li class="Home" id+"current page">
-          <a href="index.php"> Home</a>
-        </li>
-        <li class="Residential"><a href="Residential.php">Residential</a></li>
-        <li class="Commercial"><a href="Commercial.php">Commercial</a></li>
-        <li class="Industrial"><a href="Industrial.php">Industrial</a></li>
-      </ul >
-    </div> -->
     <div class="content">
       <div class="info">
         <ul>
@@ -35,9 +22,10 @@
       <div class="image-list">
         <ul>
           <li>
-            <a>
+            <a href="generalHouse.php">
               <img class="image-item" src="GreenHouse.jpg">
-
+              <?php $_SESSION['type'] = "residential";
+                    $_SESSION['id'] = 0;?>
             </a>
           </li>
           <li>
