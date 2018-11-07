@@ -23,12 +23,16 @@
         <input type="submit"  value="Register">
       </form>
     </div>
-    <div class='message'>
-      <h2><?php if(isset($_SESSION['message'])){
-        echo $_SESSION["message"];
-        unset($_SESSION["message"]);
-      }?></h2>
-    </div>
+    <div>
+			<?php
+			if(isset($_SESSION['message'])){
+				foreach($_SESSION['message'] as $message){
+					echo "<div class='message $sentiment'>$message</div>";
+				}
+			}
+			unset($_SESSION['message']);
+		?>
+  
     <div class="footer">
       <ul>
         <li class="footer-text">@Jonathan Aparicio</li>

@@ -7,45 +7,51 @@
   $password = $_POST['password'];
   $Cpassword = $_POST['Cpassword'];
   $status = true;
+  $messages = array();
+
 
   if(empty($_POST['username'])){
     $status = false;
+    $messages[] = "ENTER A EMAIL";
   }else if(!filter_var($username, FILTER_VALIDATE_EMAIL)){
+    $messages[] = "ENTER A VALID EMAIL";
     echo "Bad username";
     $status = false;
   }
 
   if(empty($_POST['password'])){
     $status = false;
+    $messages[] = "ENTER A PASSWORD";
   }else if(!preg_match('/([A-Z]|[0-9]|[a-z]){4,8}/',$password)){
     echo "Bad pasword";
+    $messages[] = "ENTER A PASSWORD THAT IS 4-8 CHARACTERS LONG THAT CONTAINS ONLY UPPER AND
+    LOWER CASE CHARACTERS AND DIGGITS 0-9";
     $status = false;
 
   }
 
   if(empty($_POST['Cpassword'])){
     $status = false;
+    $messages[] = "ENTER CONFORMATION PASSWORD";
   }else if($password == $Cpassword){
+    $messages[] = "PASSWORDS DO NOT MATCH";
     $status = false;
   }
 
-
-
-
-
-
-  if($dao->checkExists($username)){
-  echo "user allready exist";
-  $_SESSION['message'] = "This email is already in use.";
-  echo $_SESSION["message"];
-  header("Location: Register.php");
-}else if($status == false){
-  $_SESSION["message"] =  "Bad email or password.";
-  //echo "bad username or password";
-//    echo $_SESSION['message'];
-  header("Location: Register.php");
-}else{
-    $dao->addUser($username,$password);
-    header("Location: log-in.php");
+  if($status){
+    if($dao->checkExists($username)){
+      $messages[] = "THIS EMAIL IS ALREADY IN USE";
+      $_SESSION['message'] = $messages;
+      header("Location: Register.php");
+      exit;
+    }else {
+      $dao->addUser($username,$password);
+      header("Location: log-in.php");
+      exit;
+    }
+  }else {
+    $_SESSION['message'] = $messages;
+    header("Location: Register.php");
+    exit;
   }
 ?>
