@@ -32,7 +32,7 @@
 			}
 			unset($_SESSION['message']);
 		?>
-
+  </div>
     <div class="footer">
       <ul>
         <li class="footer-text">@Jonathan Aparicio</li>
