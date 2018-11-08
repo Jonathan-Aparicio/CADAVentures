@@ -4,11 +4,12 @@
   $type = $_GET['type'];
   $id = $_GET['id'];
   $info =  $dao->getAllHouseInfo($id, $type);
+  echo "got here";
   // if($type == "Residential"){
   //   $info =  $dao->getAll();
   // }
  ?>
-<html>
+<!-- <html>
   <head>
     <title>CADAVenturs - Rentals</title>
     <link rel="stylesheet" type="text/css" href="index.css">
@@ -39,4 +40,4 @@
       </ul>
     </div>
   </body>
-</html>
+</html> -->
