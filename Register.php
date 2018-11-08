@@ -31,7 +31,7 @@
 				}
 			}else{
         echo "PASSWORD MUST BE 4-8 CHARACTERS LONG THAT CONTAINS ONLY UPPER AND
-        LOWER CASE CHARACTERS AND DIGGITS 0-9"
+        LOWER CASE CHARACTERS AND DIGGITS 0-9";
       }
 			unset($_SESSION['message']);
 		?>
