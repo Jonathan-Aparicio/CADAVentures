@@ -85,7 +85,7 @@ if(empty($_POST['last'])){
 
 if($status){
   $dao->addApp($address, $city, $state, $first, $last, $email, $phone);
-  header("Location: $target");
+  header("Location: index.php");
   exit;
 }
 $messages[] = "FORM NOT VAILD PLEASE CHECK ERRORS ABOVE";
