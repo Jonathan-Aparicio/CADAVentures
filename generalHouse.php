@@ -1,6 +1,6 @@
 <?php
-  $dao = new Dao();
-  $info = array();
+  // $dao = new Dao();
+  // $info = array();
 //  $type = $_GET["type"];
 //  $id = $_GET["id"];
 //  $info =  $dao->getAllHouseInfo($id, $type);
