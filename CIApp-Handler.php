@@ -57,10 +57,10 @@ if(empty($_POST['first'])){
   $status = false;
 }
 
-if(empty($_POST['username'])){
+if(empty($_POST['email'])){
   $status = false;
   $messages[] = "ENTER A EMAIL";
-}else if(!filter_var($username, FILTER_VALIDATE_EMAIL)){
+}else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
   $messages[] = "ENTER A VALID EMAIL";
   echo "Bad username";
   $status = false;

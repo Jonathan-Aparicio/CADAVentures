@@ -15,6 +15,7 @@
    $address = $_SESSION['address'];
  }
  if(isset($_SESSION['city'])){
+   echo $_SESSION['city'];
    $city = $_SESSION['city'];
  }
  if(isset($_SESSION['state'])){
