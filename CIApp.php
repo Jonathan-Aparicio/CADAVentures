@@ -22,10 +22,19 @@
       <div class = "appForm">
         Address:<br>
         <input type="text" value="<?php echo $info[0]['StreetAddress'] ?>"><br>
-        City<br>
+        City:<br>
         <input type="text" value="<?php echo $info[0]['City'] ?>"><br>
-        State<br>
+        State:<br>
         <input type="text" value="<?php echo $info[0]['State'] ?>"><br>
+      </div>
+      <h2>Applicant information</h2>
+      <div class = "appForm">
+        first name:<br>
+        <input type="text" value="<?php echo $_SESSION['first name'] ?>"><br>
+        Last name:<br>
+        <input type="text" value="<?php echo $_SESSION['last name'] ?>"><br>
+        Email:<br>
+        <input type="text" value="<?php echo $_SESSION['email'] ?>"><br>
       </div
 
 
