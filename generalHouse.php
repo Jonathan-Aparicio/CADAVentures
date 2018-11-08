@@ -33,10 +33,10 @@ if(empty($info)){
          <hr class="info-line">
        </div>
        <div>
-         <img class="gen_image" src="<?php echo $info['Photo'] ?>">
+         <img class="gen_image" src="<?php echo $info[0]['Photo']; ?>">
        </div>
        <div class="address">
-         <p><?php echo $info['StreetAddress']?> <?php echo $info['City']; ?> <?php echo $info['State'] ?></p>
+         <p><?php echo $info[0];['StreetAddress']?> <?php echo $info['City']; ?> <?php echo $info[0]['State']; ?></p>
        </div>
      </div>
      <div class="footer">
