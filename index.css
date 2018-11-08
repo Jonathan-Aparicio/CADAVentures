@@ -114,8 +114,12 @@ text-decoration:underline;
   font-size: 2.5em;
 }
 
-img:hover{
+.image-item:hover{
   opacity: .5;
+}
+
+.click_info{
+  text-align: center;
 }
 
 span.forms{
