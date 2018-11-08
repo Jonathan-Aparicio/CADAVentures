@@ -105,6 +105,11 @@ text-decoration:underline;
   margin: right;
 }
 
+.address{
+  text-align: center;
+  font-size: 35%;
+}
+
 span.forms{
   display: inline;
 }
