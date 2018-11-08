@@ -17,7 +17,7 @@
         <label for="user">Email:</label>
         <input type="text" name="username" placeholder="Email" id="user"><br>
         <label for="pass">Password:
-        <input type="password" name="password" id="password" placeholder="pass">
+        <input type="password" name="password" id="password" placeholder="pass"><br>
         <label for="pass">Confrim Password:
         <input type="password" name="Cpassword" id="Cpassword" placeholder="pass"><br>
         <input type="submit"  value="Register">

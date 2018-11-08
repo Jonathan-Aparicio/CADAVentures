@@ -29,7 +29,7 @@
          <hr class="info-line">
        </div>
        <div>
-         <img class="image" src="<?php echo $info[0]['Photo']; ?>">
+         <img class="gen_image" src="<?php echo $info[0]['Photo']; ?>">
        </div>
        <div class="address">
          <p><?php echo $info[0]['StreetAddress']?> <?php echo $info[0]['City']; ?> <?php echo $info[0]['State']; ?></p>

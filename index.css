@@ -79,6 +79,11 @@ text-decoration:underline;
   border: 5px solid black;
 }
 
+.gen_image{
+  display: block;
+  width 35%;
+}
+
 .image{
     display: block;
     margin-top: 50px;
