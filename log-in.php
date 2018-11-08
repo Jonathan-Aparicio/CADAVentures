@@ -18,10 +18,10 @@ session_start();
 
     <div class="content">
       <form class="log" method="POST" action="log-in-handler.php">
-        <label for="user">User Name:</label>
-        <input type="text" name="username" placeholder="Email" value="<?php echo @$_SESSION['email'];?>" id="user"><br>
+        <label for="user">Email:</label>
+        <input type="email" name="username" placeholder="Email" value="<?php echo @$_SESSION['email'];?>" id="user"><br>
         <label for="pass">Password:<br>
-        <input type="password" name="password" id="password" placeholder="pass">
+        <input type="password" name="password" id="password" placeholder="pass"><br>
         <input type="submit"  value="Submit">
       </form>
       <a href="Register.php">Register</a>

@@ -14,12 +14,12 @@
 
     <div class="content">
       <form class="log" method="POST" action="Register-handler.php">
-        <label for="user">User Name:</label>
-        <input type="text" name="username" placeholder="user name" id="user"><br>
-        <label for="pass">Password:<br>
+        <label for="user">Email:</label>
+        <input type="text" name="username" placeholder="Email" id="user"><br>
+        <label for="pass">Password:
         <input type="password" name="password" id="password" placeholder="pass">
-        <label for="pass">Confrim Password:<br>
-        <input type="password" name="Cpassword" id="Cpassword" placeholder="pass">
+        <label for="pass">Confrim Password:
+        <input type="password" name="Cpassword" id="Cpassword" placeholder="pass"><br>
         <input type="submit"  value="Register">
       </form>
     </div>
@@ -29,7 +29,10 @@
 				foreach(@$_SESSION['message'] as $message){
 					echo "<div class='message'>$message</div>";
 				}
-			}
+			}else{
+        echo "PASSWORD MUST BE 4-8 CHARACTERS LONG THAT CONTAINS ONLY UPPER AND
+        LOWER CASE CHARACTERS AND DIGGITS 0-9"
+      }
 			unset($_SESSION['message']);
 		?>
   </div>

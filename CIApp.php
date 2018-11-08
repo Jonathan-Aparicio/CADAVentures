@@ -34,8 +34,10 @@
         Last name:<br>
         <input type="text" value="<?php echo $_SESSION['last name'] ?>"><br>
         Email:<br>
-        <input type="text" value="<?php echo $_SESSION['email'] ?>"><br>
-      </div
+        <input type="email" value="<?php echo $_SESSION['email'] ?>"><br>
+        Phone Number:
+        <input type="text" value="<?php echo $_SESSION['phone'] ?>"><br>
+      </div>
 
 
 
