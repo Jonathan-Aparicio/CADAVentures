@@ -84,7 +84,7 @@ if($status){
 }
 $messages[] = "FORM NOT VAILD PLEASE CHECK ERRORS ABOVE";
 $_SESSION['message']=$messages;
-header("Location:log-in.php");
+header("Location:CIApp.php");
 exit;
 
 ?>
