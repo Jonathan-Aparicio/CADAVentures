@@ -68,7 +68,7 @@ class Dao {
 	}
   public function getAllHouseInfo($id, $type){
     $conn = $this->getConnection();
-    $stmt = $conn->prepare("SELECT * FROM Houses WHERE ID = :id && Type = :type");
+    $stmt = $conn->prepare("SELECT * FROM Houses WHERE ID = :id && HouseType = :type");
     $stmt->bindParam(":id", $id);
     $stmt->bindParam(":type", $type);
     $stmt->setFetchMode(PDO::FETCH_ASSOC);
