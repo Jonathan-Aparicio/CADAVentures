@@ -28,9 +28,11 @@ session_start();
     </div>
     <div class="error-message"><?php
     if(isset($_SESSION['message'])):
+      echo "got message";
       foreach(@$_SESSION['message'] as $message){
         echo "<div class='message'>$message</div>";
       }
+
     ?>
     </div>
   <?php endif;  unset($_SESSION['message']);?>
