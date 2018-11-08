@@ -35,7 +35,7 @@ if($status){
     if(isset($_SESSION['target'])){
       $target = $_SESSION['target'];
       header("Location: $target");
-      exit
+      exit;
     }else{
       header("Location: index.php");
       exit;
