@@ -45,22 +45,22 @@
       <h2>Rental Address</h2>
       <div class = "appForm">
         Address:<br>
-        <input type="text" name="address" value="<?php echo $address ?>"><br>
+        <input type="text" name="address" value="<?php echo $address; ?>"><br>
         City:<br>
-        <input type="text" name="city" value="<?php echo $city ?>"><br>
+        <input type="text" name="city" value="<?php echo $city; ?>"><br>
         State:<br>
-        <input type="text" name="state" value="<?php echo $state ?>"><br>
+        <input type="text" name="state" value="<?php echo $state; ?>"><br>
       </div>
       <h2>Applicant information</h2>
       <div class = "appForm">
         first name:<br>
-        <input type="text" name="first" value="<?php echo $first ?>"><br>
+        <input type="text" name="first" value="<?php echo $first; ?>"><br>
         Last name:<br>
-        <input type="text" name="last" value="<?php echo $last ?>"><br>
+        <input type="text" name="last" value="<?php echo $last; ?>"><br>
         Email:<br>
-        <input type="email" name="email" value="<?php echo $_SESSION['email'] ?>"><br>
+        <input type="email" name="email" value="<?php echo $_SESSION['email']; ?>"><br>
         Phone Number:
-        <input type="number" name="phone" value="<?php echo $phone ?>"><br>
+        <input type="number" name="phone" value="<?php echo $phone; ?>"><br>
       </div>
       <input type="submit"  value="Submit">
     </form>
