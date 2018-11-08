@@ -26,15 +26,14 @@ session_start();
       </form>
       <a href="Register.php">Register</a>
     </div>
-    <div class="error-message">
-      <?php
-      if(isset($_SESSION['message'])){
-        foreach(@$_SESSION['message'] as $message){
-          echo "<div class='message'>$message</div>";
-        }
+    <div class="error-message"><?php
+    if(isset($_SESSION['message'])):
+      foreach(@$_SESSION['message'] as $message){
+        echo "<div class='message'>$message</div>";
       }
-      unset($_SESSION['message']);
     ?>
+    </div>
+  <?php endif;  unset($_SESSION['message']);?>
   </div>
     <div class="footer">
       <ul>
