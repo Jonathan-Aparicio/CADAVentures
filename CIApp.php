@@ -17,7 +17,7 @@
       <?php require_once "nav.php";?>
     </div>
     <div class="content">
-    <form action="App-Handler">
+    <form action="App-Handler" class="app" method="POST">
       <h2>Rental Address</h2>
       <div class = "appForm">
         Address:<br>
@@ -38,9 +38,7 @@
         Phone Number:
         <input type="number" name="phone" value="<?php echo $_SESSION['phone'] ?>"><br>
       </div>
-
-
-
+      <input type="submit"  value="Submit">
     </form>
       </div>
     </div>
