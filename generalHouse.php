@@ -7,7 +7,7 @@
  echo $type;
  echo $id;
  $info =  $dao->getAllHouseInfo($id, $type);
-
+echo $info["City"];
   // if($type == "Residential"){
   //   $info =  $dao->getAll();
   // }
