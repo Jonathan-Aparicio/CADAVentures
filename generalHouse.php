@@ -7,7 +7,7 @@
  echo $type;
  echo $id;
  $info =  $dao->getAllHouseInfo($id, $type);
-echo $info[0];
+echo $info[0]["City"];
 if(empty($info)){
   echo "empty";
 }
