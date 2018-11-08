@@ -21,22 +21,22 @@
       <h2>Rental Address</h2>
       <div class = "appForm">
         Address:<br>
-        <input type="text" value="<?php echo $info[0]['StreetAddress'] ?>"><br>
+        <input type="text" name="address" value="<?php echo $info[0]['StreetAddress'] ?>"><br>
         City:<br>
-        <input type="text" value="<?php echo $info[0]['City'] ?>"><br>
+        <input type="text" name="city" value="<?php echo $info[0]['City'] ?>"><br>
         State:<br>
-        <input type="text" value="<?php echo $info[0]['State'] ?>"><br>
+        <input type="text" name="state" value="<?php echo $info[0]['State'] ?>"><br>
       </div>
       <h2>Applicant information</h2>
       <div class = "appForm">
         first name:<br>
-        <input type="text" value="<?php echo $_SESSION['first name'] ?>"><br>
+        <input type="text" name="first" value="<?php echo $_SESSION['first name'] ?>"><br>
         Last name:<br>
-        <input type="text" value="<?php echo $_SESSION['last name'] ?>"><br>
+        <input type="text" name="last" value="<?php echo $_SESSION['last name'] ?>"><br>
         Email:<br>
-        <input type="email" value="<?php echo $_SESSION['email'] ?>"><br>
+        <input type="email" name="email" value="<?php echo $_SESSION['email'] ?>"><br>
         Phone Number:
-        <input type="text" value="<?php echo $_SESSION['phone'] ?>"><br>
+        <input type="number" name="phone" value="<?php echo $_SESSION['phone'] ?>"><br>
       </div>
 
 

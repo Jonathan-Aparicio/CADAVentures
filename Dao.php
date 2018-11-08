@@ -76,6 +76,26 @@ class Dao {
     return $stmt->fetchALL();
   }
 
+  public function addApp($address, $city, $state, $first, $last, $email, $phone){
+
+     $conn = $this->getConnection();
+     $saveQuery =
+           "INSERT INTO App
+           (StreetAddress, City, State, FirstName, LastName, Email, Phone)
+           VALUES
+           (:address, :city, :state, :fname, :lname, :email, :phone)";
+           $q = $conn->prepare($saveQuery);
+            $q->bindParam(":address", $address);
+            $q->bindParam(":city", $city);
+            $q->bindParam(":state", $state);
+            $q->bindParam(":fname", $first);
+            $q->bindParam(":lname", $last);
+            $q->bindParam(":email", $email);
+            $q->bindParam(":phone", $phone);
+            $q->execute();
+
+  }
+
   // public function getAllResInfo($id){
   //   $conn = $this->getConnection();
 	// 	$stmt = $conn->prepare("SELECT * FROM Residential WHERE ResidentialID = :id");

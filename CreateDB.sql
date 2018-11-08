@@ -10,7 +10,7 @@ CREATE TABLE Houses(
 	ID int NOT NULL,
 	StreetAddress nvarchar (50) NULL,
 	City nvarchar (30) NULL ,
-	State nvarchar (2) NULL ,
+	State nvarchar (50) NULL ,
     Photo nvarchar (100) NULL,
     HouseType nvarchar (20) NULL,
 	MarketID int NOT NULL DEFAULT 0,
@@ -55,6 +55,19 @@ CREATE TABLE User(
 	Email VARCHAR (256) NOT NULL,
 	Password VARCHAR(64) NOT NULL,
 	Access bit NOT NULL DEFAULT 0);
+    
+create table App(
+	ID int NOT NULL auto_increment,
+    StreetAddress nvarchar (50) Not NULL,
+	City nvarchar (30) Not NULL ,
+	State nvarchar (50) NOT NULL ,
+    FirstName nvarchar (50) Not NULL,
+    LastName nvarchar (50) Not NULL,
+    Email VARCHAR (256) NOT NULL,
+    Phone int(10) NOT NULL,
+	primary key(ID));
+    
+	
 	
  #   ALTER TABLE Houses ADD
  
