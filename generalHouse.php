@@ -12,7 +12,7 @@
      <link rel="stylesheet" type="text/css" href="index.css">
      <link rel="shortcut icon" type="image/ico" href="favicon (1).ico"/>
    </head>
-   <body>
+   <body class="gen-body">
      <div>
        <?php require_once "nav.php";?>
      </div>

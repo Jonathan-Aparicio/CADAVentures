@@ -105,9 +105,13 @@ text-decoration:underline;
   margin: right;
 }
 
+.gen_body{
+  font-size: 100%;
+}
+
 .address{
   text-align: center;
-  font-size: 35%;
+  font-size: 2.5em;
 }
 
 span.forms{
