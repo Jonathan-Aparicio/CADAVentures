@@ -26,7 +26,6 @@ if(empty($_POST['password'])){
   $messages[] = "ENTER A PASSWORD THAT IS 4-8 CHARACTERS LONG THAT CONTAINS ONLY UPPER AND
   LOWER CASE CHARACTERS AND DIGGITS 0-9";
   $status = false;
-
 }
 
 if($status){
@@ -41,12 +40,15 @@ if($status){
       exit;
     }
   }else{
-    $message[] = "NOT A VAILD EMAIL OR PASSWORD"; 
+    $message[] = "NOT A VAILD EMAIL OR PASSWORD";
   }
 }
  $_SESSION["access_granted"] = false;
  $_SESSION['message']=$message;
- header("Location:log-in.php");
+ foreach(@$_SESSION['message'] as $message){
+   echo "<div class='message'>$message</div>";
+ }
+ //header("Location:log-in.php");
  exit;
 
 ?>
