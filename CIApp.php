@@ -17,7 +17,7 @@
       <?php require_once "nav.php";?>
     </div>
     <div class="content">
-    <form action="App-Handler" class="app" method="POST">
+    <form action="CIApp-Handler.php" class="app" method="POST">
       <h2>Rental Address</h2>
       <div class = "appForm">
         Address:<br>
@@ -40,6 +40,14 @@
       </div>
       <input type="submit"  value="Submit">
     </form>
+      </div>
+      <div class="error-message"><?php
+      if(isset($_SESSION['message'])):
+        foreach(@$_SESSION['message'] as $message){
+          echo "<div class='message'>$message</div>";
+        }
+
+      ?>
       </div>
     </div>
     <div class="footer">
