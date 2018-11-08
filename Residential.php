@@ -7,7 +7,7 @@
   <body>
     <div>
       <?php require_once "nav.php";
-      $type = "Residential"?>
+      $type = "Residential";?>
     </div>
     <div class="content">
       <div class="info">
