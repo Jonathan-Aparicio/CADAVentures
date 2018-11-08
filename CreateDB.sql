@@ -5,38 +5,43 @@ CREATE DATABASE heroku_3712059cbd79f9e;
 
 use heroku_3712059cbd79f9e;
 
+CREATE TABLE Houses(
 
-
-CREATE TABLE Residential(
-
-	ResidentialID int NOT NULL DEFAULT 0 ,
-
-	ResStreetAddress nvarchar (50) NULL,
-	ResCity nvarchar (30) NULL ,
-	ResState nvarchar (2) NULL ,
+	ID int NOT NULL DEFAULT 0 ,
+	StreetAddress nvarchar (50) NULL,
+	City nvarchar (30) NULL ,
+	State nvarchar (2) NULL ,
+    Photo nvarchar (100) NULL,
 	MarketID int NOT NULL DEFAULT 0);
 
 
-CREATE TABLE Commercial(
-
-	CommercialID int NOT NULL DEFAULT 0 ,
-
-	CommStreetAddress nvarchar (50) NULL,
-	CommCity nvarchar (30) NULL ,
-	CommState nvarchar (2) NULL ,
-	MarketID int NOT NULL DEFAULT 0);
-
+#CREATE TABLE Residential(
+#	ResidentialID int NOT NULL DEFAULT 0 ,
+#	ResStreetAddress nvarchar (50) NULL,
+#	ResCity nvarchar (30) NULL ,
+#	ResState nvarchar (2) NULL ,
+#   Photo nvarchar (100) NULL,
+#	MarketID int NOT NULL DEFAULT 0);
 
 
-CREATE TABLE Industrial(
+#CREATE TABLE Commercial(
+#	CommercialID int NOT NULL DEFAULT 0 ,
+#	CommStreetAddress nvarchar (50) NULL,
+#	CommCity nvarchar (30) NULL ,
+#	CommState nvarchar (2) NULL ,
+#	Photo nvarchar (100) NULL,
+#	MarketID int NOT NULL DEFAULT 0);
 
-	IndustrialID int NOT NULL DEFAULT 0 ,
 
-	IndStreetAddress nvarchar (50) NULL,
-	IndCity nvarchar (30) NULL ,
-	IndState nvarchar (2) NULL ,
-	Rent int NOT NULL DEFAULT 0,
-	MarketID int NOT NULL DEFAULT 0);
+
+#CREATE TABLE Industrial(
+#	IndustrialID int NOT NULL DEFAULT 0 ,
+#	IndStreetAddress nvarchar (50) NULL,
+#	IndCity nvarchar (30) NULL ,
+#	IndState nvarchar (2) NULL ,
+#	Rent int NOT NULL DEFAULT 0,
+#   Photo nvarchar (100) NULL,
+#	MarketID int NOT NULL DEFAULT 0);
 
 CREATE TABLE Market(
 	MarketID int NOT NULL DEFAULT 0,
@@ -49,35 +54,45 @@ CREATE TABLE User(
 	Password VARCHAR(64) NOT NULL,
 	Access bit NOT NULL DEFAULT 0);
 	
-ALTER TABLE Residential ADD
+    ALTER TABLE Residential ADD
  
-	CONSTRAINT Residential_PK PRIMARY KEY
+	CONSTRAINT Houses_PK PRIMARY KEY
    
 	(
 
-		ResidentialID 
+		ID 
 	) ;
 
-ALTER TABLE Commercial ADD
+    
+#ALTER TABLE Residential ADD
  
-	CONSTRAINT Commercial_PK PRIMARY KEY
+#	CONSTRAINT Residential_PK PRIMARY KEY
    
-	(
+#	(
 
-		CommercialID 
+#		ResidentialID 
+#	) ;
 
-	) ;
-
-
-
-ALTER TABLE Industrial ADD
+#ALTER TABLE Commercial ADD
  
-	CONSTRAINT Industrial_PK PRIMARY KEY
+#	CONSTRAINT Commercial_PK PRIMARY KEY
    
-	(
+#	(
 
-		IndustrialID 
-	) ;
+#		CommercialID 
+
+#	) ;
+
+
+
+#ALTER TABLE Industrial ADD
+ 
+#	CONSTRAINT Industrial_PK PRIMARY KEY
+   
+#	(
+
+#		IndustrialID 
+#	) ;
 
 
 
@@ -108,25 +123,9 @@ ALTER TABLE User ADD
 
 	) ;
 
-ALTER TABLE Residential ADD
+ALTER TABLE Houses ADD
  
-	CONSTRAINT Residential_FK00 FOREIGN KEY
- 
-	(
-
-		MarketID 
-
-	) REFERENCES Market(
-
-		MarketID 
-
-	);
-
-
-
-ALTER TABLE Commercial ADD
- 
-	CONSTRAINT Commercial_FK00 FOREIGN KEY
+	CONSTRAINT Houses_FK00 FOREIGN KEY
  
 	(
 
@@ -138,19 +137,49 @@ ALTER TABLE Commercial ADD
 
 	);
 
-ALTER TABLE Industrial ADD
+#ALTER TABLE Residential ADD
  
-	CONSTRAINT Industrial_FK00 FOREIGN KEY
+#	CONSTRAINT Residential_FK00 FOREIGN KEY
  
-	(
+#	(
 
-		MarketID 
+#		MarketID 
 
-	) REFERENCES Market(
+#	) REFERENCES Market(
 
-		MarketID 
+#		MarketID 
 
-	);
+#	);
+
+
+
+#ALTER TABLE Commercial ADD
+ 
+#	CONSTRAINT Commercial_FK00 FOREIGN KEY
+ 
+#	(
+
+#		MarketID 
+
+#	) REFERENCES Market(
+
+#		MarketID 
+
+#	);
+
+#ALTER TABLE Industrial ADD
+ 
+#	CONSTRAINT Industrial_FK00 FOREIGN KEY
+ 
+#	(
+
+#		MarketID 
+
+#	) REFERENCES Market(
+
+#		MarketID 
+
+#	);
 
 ALTER TABLE Market ADD
  

@@ -66,6 +66,42 @@ class Dao {
 		$stmt->execute();
 		return $stmt->fetch();
 	}
+  public function getAllHouseInfo($id, $type){
+    $conn = $this->getConnection();
+    $stmt = $conn->prepare("SELECT * FROM Houses WHERE ID = :id && Type = :type");
+    $stmt->bindParam(":id", $id);
+    $stmt->bindParam(":type", $type);
+    $stmt->setFetchMode(PDO::FETCH_ASSOC);
+    $stmt->execute();
+    return $stmt->fetchALL();
+  }
+
+  // public function getAllResInfo($id){
+  //   $conn = $this->getConnection();
+	// 	$stmt = $conn->prepare("SELECT * FROM Residential WHERE ResidentialID = :id");
+	// 	$stmt->bindParam(":id", $id);
+  //   $stmt->setFetchMode(PDO::FETCH_ASSOC);
+	// 	$stmt->execute();
+	// 	return $stmt->fetchALL();
+  // }
+  //
+  // public function getAllComInfo($id){
+  //   $conn = $this->getConnection();
+  //   $stmt = $conn->prepare("SELECT * FROM Commercial WHERE CommercialID = :id");
+  //   $stmt->bindParam(":id", $id);
+  //   $stmt->setFetchMode(PDO::FETCH_ASSOC);
+  //   $stmt->execute();
+  //   return $stmt->fetchALL();
+  // }
+  //
+  // public function getAllIndInfo($id){
+  //   $conn = $this->getConnection();
+  //   $stmt = $conn->prepare("SELECT * FROM Industrial WHERE IndustrialID = :id");
+  //   $stmt->bindParam(":id", $id);
+  //   $stmt->setFetchMode(PDO::FETCH_ASSOC);
+  //   $stmt->execute();
+  //   return $stmt->fetchALL();
+  // }
   //
   // public function getProducts () {
   //   $conn = $this->getConnection();
