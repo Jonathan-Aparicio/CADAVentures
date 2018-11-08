@@ -19,7 +19,12 @@
      <div class="content">
        <div class="info">
          <ul>
-           <li class="apply"><a href="log-in.php">apply</a></li>
+           <li class="apply">  <a href="
+             <?php if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"]) {
+               echo "CIApp.php?type=$type&id=$id";
+             }else{
+               echo "log-in.php";
+             } ?>">apply</a></li>
          </ul>
          <hr class="info-line">
        </div>

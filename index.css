@@ -75,6 +75,10 @@ text-decoration:underline;
   width: 85%;
 }
 
+.appForm{
+  border: 5px solid black;
+}
+
 .image{
     display: block;
     margin-top: 50px;
@@ -106,6 +110,8 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+
 
 /* .forms{
   display: block;

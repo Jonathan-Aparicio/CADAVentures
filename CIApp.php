@@ -1,3 +1,11 @@
+<?php
+  require_once "Dao.php";
+  $dao = new Dao();
+  // $info = array();
+ $type = $_GET["type"];
+ $id = $_GET["id"];
+ $info =  $dao->getAllHouseInfo($id, $type);
+ ?>
 <html>
   <head>
     <title>CADAVenturs - Rentals</title>
@@ -9,71 +17,18 @@
       <?php require_once "nav.php";?>
     </div>
     <div class="content">
-      <a href="Business_Credit_Application.pdf">pdf download</a>
-    <form>
-      <h2>Name/Address</h2>
-      <hr class="appline">
-        <span class="forms">Last name:
-        <input type="text" name="firstname"></span>
-        <span class="forms">First name:
-        <input type="text" name="lastname"></span>
-        <span class="forms">Middle Initial:
-        <input type="text" name="middle initial"></span>
-        <span class="forms">Name of Business:
-        <input type="text" name="BussinessName"></span>
-        <br>
-        <span class="forms">City:
-        <input type="text" name="City"></span>
-        <span class="forms">State:
-        <input type="text" name="State"></span>
-        <span class="forms">ZIP:
-        <input type="text" name="ZIP"></span>
-        <span class="forms">Phone:
-        <input type="text" name="Phone"></span>
-        <h2>Company Information</h2>
-        <hr class="appline">
-        <span class="forms">Type of Business:
-        <input type="text" name="firstname"></span>
-        <span class="forms">In Business Since:
-        <input type="text" name="lastname"></span>
-        <span class="forms">Legal Form Under which Business Operates:
-        <select><option value="Corporation">Corporation</option>
-        <option value="Partnership">Partnership</option>
-        <option value="Proprietorship">Corporation</option></select></span>
-        <span class="forms">If Division/Subsidiary, Name of Parent Compan:
-        <input type="text" name="Division"></span>
-        <span class="forms">In Business Since:
-        <input type="text" name="lastname"></span>
-        <br>
-        <span class="forms">Name of Company Principal Responsible for Business Transacti:
-        <input type="text" name="Principal"></span>
-        <span class="forms">Title:
-        <input type="text" name="Title"></span>
-        <span class="forms">Address:
-        <input type="text" name="Address"></span>
-        <input type="text" name="City"></span>
-        <span class="forms">State:
-        <input type="text" name="State"></span>
-        <span class="forms">ZIP:
-        <input type="text" name="ZIP"></span>
-        <span class="forms">Phone:
-        <input type="text" name="Phone"></span>
-        <br>
-        <span class="forms">Name of Company Principal Responsible for Business Transacti:
-        <input type="text" name="Principal"></span>
-        <span class="forms">Title:
-        <input type="text" name="Title"></span>
-        <span class="forms">Address:
-        <input type="text" name="Address"></span>
-        <input type="text" name="City"></span>
-        <span class="forms">State:
-        <input type="text" name="State"></span>
-        <span class="forms">ZIP:
-        <input type="text" name="ZIP"></span>
-        <span class="forms">Phone:
-        <input type="text" name="Phone"></span>
-        <h2>Bank References</h2>
-        <hr class="appline">
+    <form action="App-Handler">
+      <h2>Rental Address</h2>
+      <div class = "appForm">
+        Address:<br>
+        <input type="text" value="<?php echo $info[0]['StreetAddress'] ?>"><br>
+        City<br>
+        <input type="text" value="<?php echo $info[0]['City'] ?>"><br>
+        State<br>
+        <input type="text" value="<?php echo $info[0]['State'] ?>"><br>
+      </div
+
+
 
     </form>
       </div>

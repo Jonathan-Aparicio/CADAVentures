@@ -12,7 +12,6 @@
       <div class="info">
         <ul>
           <li class="contact-us"><a href="Contact.php">Contact Us</a></li>
-          <li class="apply"><a href="log-in.php">apply</a></li>
         </ul>
         <hr class="info-line">
       </div>
