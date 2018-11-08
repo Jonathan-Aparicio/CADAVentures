@@ -4,7 +4,10 @@
   // $info = array();
  $type = $_GET["type"];
  $id = $_GET["id"];
+ echo $type;
+ echo $id;
  $info =  $dao->getAllHouseInfo($id, $type);
+
   // if($type == "Residential"){
   //   $info =  $dao->getAll();
   // }
