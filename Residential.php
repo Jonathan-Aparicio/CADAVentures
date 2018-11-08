@@ -6,9 +6,7 @@
   </head>
   <body>
     <div>
-      <?php require_once "nav.php";
-      $type = "Residential"
-      ?>
+      <?php require_once "nav.php";?>
     </div>
     <div class="content">
       <div class="info">
@@ -24,7 +22,7 @@
       <div class="image-list">
         <ul>
           <li>
-            <a href="generalHouse.php?type=$type&id=1" >
+            <a href="generalHouse.php?type=Residential&id=1" >
               <img class="image-item" src="GreenHouse.jpg">
 
             </a>
