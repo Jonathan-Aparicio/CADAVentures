@@ -40,6 +40,8 @@ if($status){
       header("Location: index.php");
       exit;
     }
+  }else{
+    $message[] = "NOT A VAILD EMAIL OR PASSWORD"; 
   }
 }
  $_SESSION["access_granted"] = false;
