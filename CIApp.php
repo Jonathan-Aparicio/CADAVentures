@@ -49,6 +49,7 @@
 
       ?>
       </div>
+        <?php endif;  unset($_SESSION['message']);?>
     </div>
     <div class="footer">
       <ul>
