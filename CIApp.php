@@ -5,6 +5,30 @@
  $type = $_GET["type"];
  $id = $_GET["id"];
  $info =  $dao->getAllHouseInfo($id, $type);
+ $address = $info[0]['StreetAddress'];
+ $city =  $info[0]['City'];
+ $state = $info[0]['State'];
+ $first = "";
+ $last = "";
+ $phone;
+ if(isset($_SESSION['address'])){
+   $address = $_SESSION['address'];
+ }
+ if(isset($_SESSION['city'])){
+   $city = $_SESSION['city'];
+ }
+ if(isset($_SESSION['state'])){
+   $state = $_SESSION['state'];
+ }
+ if(isset($_SESSION['first'])){
+   $first = $_SESSION['first'];
+ }
+ if(isset($_SESSION['last'])){
+   $last = $_SESSION['last'];
+ }
+ if(isset($_SESSION['phone'])){
+   $phone = $_SESSION['phone'];
+ }
  ?>
 <html>
   <head>
@@ -21,22 +45,22 @@
       <h2>Rental Address</h2>
       <div class = "appForm">
         Address:<br>
-        <input type="text" name="address" value="<?php echo $info[0]['StreetAddress'] ?>"><br>
+        <input type="text" name="address" value="<?php echo $address ?>"><br>
         City:<br>
-        <input type="text" name="city" value="<?php echo $info[0]['City'] ?>"><br>
+        <input type="text" name="city" value="<?php echo $city ?>"><br>
         State:<br>
-        <input type="text" name="state" value="<?php echo $info[0]['State'] ?>"><br>
+        <input type="text" name="state" value="<?php echo $state ?>"><br>
       </div>
       <h2>Applicant information</h2>
       <div class = "appForm">
         first name:<br>
-        <input type="text" name="first" value="<?php echo $_SESSION['first name'] ?>"><br>
+        <input type="text" name="first" value="<?php echo $first ?>"><br>
         Last name:<br>
-        <input type="text" name="last" value="<?php echo $_SESSION['last name'] ?>"><br>
+        <input type="text" name="last" value="<?php echo $last ?>"><br>
         Email:<br>
         <input type="email" name="email" value="<?php echo $_SESSION['email'] ?>"><br>
         Phone Number:
-        <input type="number" name="phone" value="<?php echo $_SESSION['phone'] ?>"><br>
+        <input type="number" name="phone" value="<?php echo $phone ?>"><br>
       </div>
       <input type="submit"  value="Submit">
     </form>

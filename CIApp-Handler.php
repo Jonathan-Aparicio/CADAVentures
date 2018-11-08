@@ -4,18 +4,24 @@ require_once "Dao.php";
 $dao = new Dao();
 
 $address = $_POST['address'];
+$_SESSION['address'] = $address;
 $address = filter_var($address, FILTER_SANITIZE_STRING);
 $city = $_POST['city'];
+$_SESSION['city'] = $city;
 $city = filter_var($city, FILTER_SANITIZE_STRING);
 $state = $_POST['state'];
+$_SESSION['state'] = $state;
 $state = filter_var($state, FILTER_SANITIZE_STRING);
 $first = $_POST['first'];
+$_SESSION['first'] = $first;
 $first = filter_var($first, FILTER_SANITIZE_STRING);
 $last = $_POST['last'];
+$_SESSION['last'] = $last;
 $last = filter_var($last, FILTER_SANITIZE_STRING);
 $email = $_POST['email'];
 $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 $phone = $_POST['phone'];
+$_SESSION['phone'] = $phone;
 $status = true;
 $messages = array();
 
