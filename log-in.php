@@ -20,7 +20,7 @@ session_start();
       <form class="log" method="POST" action="log-in-handler.php">
         <label for="user">Email:</label>
         <input type="email" name="username" placeholder="Email" value="<?php echo @$_SESSION['email'];?>" id="user"><br>
-        <label for="pass">Password:<br>
+        <label for="pass">Password:
         <input type="password" name="password" id="password" placeholder="pass"><br>
         <input type="submit"  value="Submit">
       </form>
