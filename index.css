@@ -118,6 +118,10 @@ text-decoration:underline;
   opacity: .5;
 }
 
+.image:hover{
+  opacity: .5;  
+}
+
 .click_info{
   text-align: center;
 }

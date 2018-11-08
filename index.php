@@ -19,8 +19,8 @@
               echo "Maintence.php";
             }else{
               echo "log-in.php";
+              $_SESSION['target'] = "Maintence.php";
             } ?>"
-
             >Maintenance Request</a></li>
           <li class="Pay"><a href="PayApp.php">Pay Online</a></li>
         </ul>

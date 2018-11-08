@@ -14,6 +14,7 @@
           <li class="contact-us"><a href="Contact.php">Contact Us</a></li>
         </ul>
         <hr class="info-line">
+          <h2 class="click_info">To see more information about house click on image.</h2>
       </div>
       <div>
         <a href="generalHouse.php?type=Commercial&id=4">

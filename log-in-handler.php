@@ -32,8 +32,14 @@ if(empty($_POST['password'])){
 if($status){
   if($dao->checkLog($username,$password)){
     $_SESSION["access_granted"]=true;
-    header("Location: index.php");
-    exit;
+    if(isset($_SESSION['target'])){
+      $target = $_SESSION['target'];
+      header("Location: $target");
+      exit
+    }else{
+      header("Location: index.php");
+      exit;
+    }
   }
 }
  $_SESSION["access_granted"] = false;

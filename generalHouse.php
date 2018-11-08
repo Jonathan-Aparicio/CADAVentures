@@ -24,6 +24,7 @@
                echo "CIApp.php?type=$type&id=$id";
              }else{
                echo "log-in.php";
+               $_SESSION['target'] = "CIApp.php?type=$type&id=$id";
              } ?>">apply</a></li>
          </ul>
          <hr class="info-line">
