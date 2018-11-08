@@ -15,12 +15,6 @@
         </ul>
         <hr class="info-line">
       </div>
-      <div>
-        <img class="gen_image" src="<?php echo $info['Photo'] ?>">
-      </div>
-      <div class="address">
-        <p><?php echo $info['StreetAddress']?> <?php echo $info['City']; ?> <?php echo $info['State'] ?></p>
-      </div>
     </div>
     <div class="footer">
       <ul>

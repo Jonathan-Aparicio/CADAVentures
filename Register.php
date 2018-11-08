@@ -24,17 +24,18 @@
       </form>
     </div>
     <div>
-			<?php
-			if(isset($_SESSION['message'])){
+			<div class="error-message"><?php
+			if(isset($_SESSION['message'])):
 				foreach(@$_SESSION['message'] as $message){
 					echo "<div class='message'>$message</div>";
 				}
-			}else{
-        echo "PASSWORD MUST BE 4-8 CHARACTERS LONG THAT CONTAINS ONLY UPPER AND
-        LOWER CASE CHARACTERS AND DIGGITS 0-9";
-      }
-			unset($_SESSION['message']);
-		?>
+      ?>
+      </div>
+      <?php else: echo "PASSWORD MUST BE 4-8 CHARACTERS LONG THAT CONTAINS ONLY UPPER AND
+      LOWER CASE CHARACTERS AND DIGGITS 0-9";?>
+
+    <?php endif;  unset($_SESSION['message']);?>
+		
   </div>
     <div class="footer">
       <ul>
