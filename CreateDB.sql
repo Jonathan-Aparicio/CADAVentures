@@ -7,12 +7,14 @@ use heroku_3712059cbd79f9e;
 
 CREATE TABLE Houses(
 
-	ID int NOT NULL DEFAULT 0 ,
+	ID int NOT NULL,
 	StreetAddress nvarchar (50) NULL,
 	City nvarchar (30) NULL ,
 	State nvarchar (2) NULL ,
     Photo nvarchar (100) NULL,
-	MarketID int NOT NULL DEFAULT 0);
+    HouseType nvarchar (20) NULL,
+	MarketID int NOT NULL DEFAULT 0,
+    primary key(ID));
 
 
 #CREATE TABLE Residential(
@@ -54,14 +56,14 @@ CREATE TABLE User(
 	Password VARCHAR(64) NOT NULL,
 	Access bit NOT NULL DEFAULT 0);
 	
-    ALTER TABLE Residential ADD
+ #   ALTER TABLE Houses ADD
  
-	CONSTRAINT Houses_PK PRIMARY KEY
+#	CONSTRAINT Houses_PK PRIMARY KEY
    
-	(
+#	(
 
-		ID 
-	) ;
+#		ID 
+#	) ;
 
     
 #ALTER TABLE Residential ADD
@@ -123,19 +125,19 @@ ALTER TABLE User ADD
 
 	) ;
 
-ALTER TABLE Houses ADD
+#ALTER TABLE Houses ADD
  
-	CONSTRAINT Houses_FK00 FOREIGN KEY
+#	CONSTRAINT Houses_FK00 FOREIGN KEY
  
-	(
+#	(
 
-		MarketID 
+#		MarketID 
 
-	) REFERENCES Market(
+#	) REFERENCES Market(
 
-		MarketID 
+#		MarketID 
 
-	);
+#	);
 
 #ALTER TABLE Residential ADD
  

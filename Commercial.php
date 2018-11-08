@@ -29,7 +29,7 @@
             </a>
           </li>
           <li>
-            <a href="generalHouse.php?type=Commercial&id=7"><img class="image-item" src="store2.jpg"></a>
+            <a href="generalHouse.php?type=Commercial&id=5"><img class="image-item" src="store2.jpg"></a>
           </li>
           <li>
             <a href="generalHouse.php?type=Commercial&id=6"><img class="image-item" src="store3.jpg"></a>

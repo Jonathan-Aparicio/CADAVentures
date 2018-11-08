@@ -17,7 +17,7 @@
         <hr class="info-line">
       </div>
       <div>
-        <a href="generalHouse.php?type=Industrial&id=7">
+        <a href="generalHouse.php?type=Industrial&id=9">
           <img class="image" src="industrial3.jpg" alt="Residential Green House">
         </a>
       </div>
