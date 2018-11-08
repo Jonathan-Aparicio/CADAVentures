@@ -27,7 +27,6 @@ session_start();
       <a href="Register.php">Register</a>
     </div>
     <div class="error-message"><?php
-    echo "got message";
     if(isset($_SESSION['message'])):
       foreach(@$_SESSION['message'] as $message){
         echo "<div class='message'>$message</div>";

@@ -40,15 +40,12 @@ if($status){
       exit;
     }
   }else{
-    $message[] = "NOT A VAILD EMAIL OR PASSWORD";
+    $messages[] = "NOT A VAILD EMAIL OR PASSWORD";
   }
 }
  $_SESSION["access_granted"] = false;
- $_SESSION['message']=$message;
- foreach(@$_SESSION['message'] as $message){
-   echo "<div class='message'>$message</div>";
- }
- //header("Location:log-in.php");
+ $_SESSION['message']=$messages;
+ header("Location:log-in.php");
  exit;
 
 ?>
