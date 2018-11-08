@@ -1,5 +1,5 @@
 <?php
-  // $dao = new Dao();
+   $dao = new Dao();
   // $info = array();
 //  $type = $_GET["type"];
 //  $id = $_GET["id"];
