@@ -3,13 +3,11 @@
   <title>CADAVenturs - Rentals</title>
   <link rel="stylesheet" type="text/css" href="index.css">
   <link rel="shortcut icon" type="image/ico" href="favicon (1).ico"/>
-  <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
-  <!-- <link rel="stylesheet" href="skippr-master/dist/skippr.css"> -->
+  <script src="jquery-3.3.1.min.js" type="text/javascript"></script>->
   <script src="slider-handler.js" type="text/javascript"></script>
-  <script type="text/javascript" src="ryrych-rcarousel-3b32a0b/widget/lib/jquery.ui.core.min.js"></script>
-  <script type="text/javascript" src="ryrych-rcarousel-3b32a0b/widget/lib/jquery.ui.widget.min.js"></script>
-  <script type="text/javascript" src="ryrych-rcarousel-3b32a0b/widget/lib/jquery.ui.rcarousel.min.js"></script>
-  <link type="text/css" rel="stylesheet" href="ryrych-rcarousel-3b32a0b/widget/css/rcarousel.css" />
+  <link rel="stylesheet" href="slides/css/slider.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script src="slides/js/jquery.flexslider-min.js"></script>
 </head>
 <body>
   <div class="banner">

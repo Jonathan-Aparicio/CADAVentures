@@ -26,25 +26,18 @@
         </ul>
         <hr class="info-line">
       </div>
-      <div id="slider">
-        <div>
-          <!-- <a href="generalHouse.php?type=Residential&id=1"> -->
-          <img class="image" src="GreenHouse.jpg" alt="Residential Green House">
-        <!-- </a> -->
+      <div class="flex-container">
+      <div class="flexslider">
+        <ul class="slides">
+          <li><a href="generalHouse.php?type=Residential&id=1">
+            <img class="image" src="GreenHouse.jpg" alt="Residential Green House">
+          </a></li>
+          <li><a href="generalHouse.php?type=Residential&id=2">
+            <img class="image-item" src="white house.jpg"></a></li>
+          <li><a href="generalHouse.php?type=Residential&id=3">
+            <img class="image-item" src="RedHouse.jpg"></a></li>
       </div>
-        <div>
-          <!-- <a href="generalHouse.php?type=Residential&id=2"> -->
-          <img class="image-item" src="white house.jpg">
-        <!-- </a> -->
-      </div>
-        <div>
-          <!-- <a href="generalHouse.php?type=Residential&id=3"> -->
-          <img class="image-item" src="RedHouse.jpg">
-        <!-- </a> -->
-      </div>
-      </div>
-      <a href="#" id="ui-carousel-next">next</a>
-	     <a href="#" id="ui-carousel-prev">prev;</a>
+    </div>
     </div>
     <div class="footer">
       <ul>
