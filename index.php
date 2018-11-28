@@ -35,6 +35,8 @@
         <div><a href="generalHouse.php?type=Residential&id=3">
           <img class="image-item" src="RedHouse.jpg"></a></div>
       </div>
+      <a href="#" id="ui-carousel-next">next</a>
+	     <a href="#" id="ui-carousel-prev">prev;</a>
     </div>
     <div class="footer">
       <ul>
@@ -42,6 +44,5 @@
         <li class="footer-text"><a href="Contact.php">Contact</a></li>
       </ul>
     </div>
-<script src="skippr-master/dist/skippr.js"></script>
   </body>
 </html>

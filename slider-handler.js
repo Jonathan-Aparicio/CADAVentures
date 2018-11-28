@@ -1,16 +1,6 @@
-$(function(){
-  $("#slider").skippr({
-
-        transition: 'slide',
-        speed: 1000,
-        easing: 'easeOutQuart',
-        navType: 'block',
-        childrenElementType: 'div',
-        arrows: true,
-        autoPlay: false,
-        autoPlayDuration: 5000,
-        keyboardOnAlways: true,
-        hidePrevious: false
-
-    });
-});
+jQuery(function($) {
+		$( "#slider" ).rcarousel(
+      {width: 200, height: 200}
+      auto: {enable: true}
+    );
+	});
