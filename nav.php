@@ -3,8 +3,9 @@
   <title>CADAVenturs - Rentals</title>
   <link rel="stylesheet" type="text/css" href="index.css">
   <link rel="shortcut icon" type="image/ico" href="favicon (1).ico"/>
-  <script src="jquery-3.3.1.min.js"></script>
+  <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
   <link rel="stylesheet" href="dist/skippr.css">
+  <script src="slider-handler.js" type="text/javascript"></script>
 </head>
 <body>
   <div class="banner">

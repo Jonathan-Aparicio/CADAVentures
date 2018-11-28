@@ -42,7 +42,6 @@
         <li class="footer-text"><a href="Contact.php">Contact</a></li>
       </ul>
     </div>
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="dist/skippr.js"></script>
+
   </body>
 </html>
