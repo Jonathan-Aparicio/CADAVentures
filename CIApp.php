@@ -16,7 +16,6 @@
    $address = $_SESSION['address'];
  }
  if(isset($_SESSION['city'])){
-   echo $_SESSION['city'];
    $city = $_SESSION['city'];
  }
  if(isset($_SESSION['state'])){
@@ -33,11 +32,6 @@
  }
  ?>
 <html>
-  <head>
-    <title>CADAVenturs - Rentals</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="shortcut icon" type="image/ico" href="favicon (1).ico"/>
-  </head>
   <body>
     <div>
       <?php require_once "nav.php";?>

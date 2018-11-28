@@ -1,4 +1,11 @@
 <?php session_start(); ?>
+<head>
+  <title>CADAVenturs - Rentals</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="shortcut icon" type="image/ico" href="favicon (1).ico"/>
+  <script src="jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="dist/skippr.css">
+</head>
 <body>
   <div class="banner">
     <img class="logo" src="logo.png">
