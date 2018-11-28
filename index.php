@@ -42,6 +42,6 @@
         <li class="footer-text"><a href="Contact.php">Contact</a></li>
       </ul>
     </div>
-
+<script src="skippr-master/dist/skippr.js"></script>
   </body>
 </html>
