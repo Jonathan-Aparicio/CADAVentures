@@ -9,6 +9,14 @@
     <div>
       <?php require_once "nav.php";?>
     </div>
+    <script>
+$(document).ready(function () {
+    $('.flexslider').flexslider({
+        animation: 'fade',
+        controlsContainer: '.flexslider'
+    });
+});
+</script>
     <div class="content">
       <div class="info">
         <ul>
