@@ -36,6 +36,7 @@
             <img class="image-item" src="white house.jpg"></a></li>
           <li><a href="generalHouse.php?type=Residential&id=3">
             <img class="image-item" src="RedHouse.jpg"></a></li>
+          </ul>
       </div>
     </div>
     </div>
