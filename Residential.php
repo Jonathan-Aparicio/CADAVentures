@@ -24,18 +24,14 @@ $(document).ready(function () {
               <img class="image" src="GreenHouse.jpg" alt="Residential Green House">
             </a></li>
           <li><a href="generalHouse.php?type=Residential&id=1" >
-            <img class="image-item" src="GreenHouse.jpg">
+            <img class="image" src="GreenHouse.jpg">
           </a></li>
           <li> <a href="generalHouse.php?type=Residential&id=2">
-            <img class="image-item" src="white house.jpg"></a></li>
+            <img class="image" src="white house.jpg"></a></li>
           </ul>
       </div>
     </div>
-      <div>
-        <a href="generalHouse.php?type=Residential&id=1">
-          <img class="image" src="GreenHouse.jpg" alt="Residential Green House">
-        </a>
-      </div>
+
       <div class="image-list">
         <ul>
           <li>

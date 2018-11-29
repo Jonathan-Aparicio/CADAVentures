@@ -23,9 +23,8 @@ $(document).ready(function () {
           <li><a href="generalHouse.php?type=Commercial&id=4">
             <img class="image" src="store1.jpg" alt="Residential Green House">
           </a></li>
-          <li><a href="generalHouse.php?type=Commercial&id=4">
-              <img class="image" src="store1.jpg">
-            </a></li>
+          <li><a href="generalHouse.php?type=Commercial&id=5">
+            <img class="image" src="store2.jpg"></a></li>
           <li><a href="generalHouse.php?type=Commercial&id=6">
             <img class="image" src="store3.jpg"></a></li>
           </ul>

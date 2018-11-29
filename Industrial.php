@@ -21,12 +21,12 @@ $(document).ready(function () {
       <div class="flexslider">
         <ul class="slides">
           <li><a href="generalHouse.php?type=Industrial&id=7">
-              <img class="image-item" src="industrial1.jpg">
+              <img class="image" src="industrial1.jpg">
             </a></li>
           <li>  <a href="generalHouse.php?type=Industrial&id=8">
-            <img class="image-item" src="industrial2.jpg"></a></li>
+            <img class="image" src="industrial2.jpg"></a></li>
           <li><a href="generalHouse.php?type=Industrial&id=9">
-            <img class="image-item" src="industrial3.jpg"></a></li>
+            <img class="image" src="industrial3.jpg"></a></li>
           </ul>
       </div>
     </div>
