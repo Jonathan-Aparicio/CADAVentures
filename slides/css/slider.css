@@ -70,6 +70,7 @@ html[xmlns] .slides { display: block; }
 	zoom: 1;
 	padding: 10px;
 	background: #DDD;
+	margin: auto;
 
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -84,6 +85,7 @@ html[xmlns] .slides { display: block; }
 .flex-container {
 	min-width: 72;
 	max-width: 960px;
+	margin: auto;
 }
 
 .flexslider .slides { zoom: 1; }
