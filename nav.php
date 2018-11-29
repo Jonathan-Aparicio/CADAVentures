@@ -29,4 +29,13 @@
       <?php endif; ?>
     </ul >
   </div>
-</bod>
+</body>
+<script>
+    $(function(){
+        $('a').each(function(){
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('active'); $(this).parents('li').addClass('active');
+            }
+        });
+    });
+</script>
