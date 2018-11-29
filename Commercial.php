@@ -30,6 +30,8 @@ $(document).ready(function () {
           </ul>
       </div>
     </div>
+    <br>
+    <div class="images">
       <div class="image-list">
         <ul>
           <li>
@@ -46,6 +48,7 @@ $(document).ready(function () {
         </ul>
       </div>
     </div>
+  </div>
     <div class="footer">
       <ul>
         <li class="footer-text">@Jonathan Aparicio</li>
