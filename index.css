@@ -28,7 +28,7 @@ body {
 
 }
 
-.nav-item{
+.nav-item .active{
   background-color: yellow;
   color: black;
 }
