@@ -90,14 +90,14 @@ text-decoration:underline;
   color: red;
 }
 
-.image{
+/* .image{
     display: block;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-}
+} */
 
 .image-list > ul > li {
   display: inline;
