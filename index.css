@@ -112,6 +112,10 @@ text-decoration:underline;
   margin: right;
 }
 
+.image-list{
+  width: 100%;
+}
+
 .gen_body{
   font-size: 100%;
 }
