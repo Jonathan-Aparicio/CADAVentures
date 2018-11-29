@@ -16,7 +16,7 @@
   </div>
   <div class="nav-bar" id="nav-bar">
     <ul >
-      <li class="Home" id+"current page">
+      <li class="nav-item" id+"current page">
         <a href="index.php"> Home</a>
       </li>
       <li class="nav-item"><a href="Residential.php">Residential</a></li>
