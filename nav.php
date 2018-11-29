@@ -11,7 +11,8 @@
 </head>
 <body>
   <div class="banner">
-    <img class="logo" src="logo.png">
+    <a href="index.php">
+    <img class="logo" src="logo.png"></a>
   </div>
   <div class="nav-bar" id="nav-bar">
     <ul >

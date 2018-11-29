@@ -114,6 +114,8 @@ text-decoration:underline;
 
 .image-list{
   width: 100%;
+  margin: auto;
+  position: relative;
 }
 
 .gen_body{
