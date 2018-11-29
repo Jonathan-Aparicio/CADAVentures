@@ -1,13 +1,14 @@
 <html>
-  <head>
-    <title>CADAVenturs - Rentals</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="shortcut icon" type="image/ico" href="favicon (1).ico"/>
-  </head>
-  <body>
-    <div>
       <?php require_once "nav.php";?>
-    </div>
+  <script>
+$(document).ready(function () {
+  $('.flexslider').flexslider({
+      animation: 'fade',
+      controlsContainer: '.flexslider'
+  });
+});
+</script>
+  <body>
     <div class="content">
       <div class="info">
         <ul>
@@ -16,11 +17,19 @@
         <hr class="info-line">
           <h2 class="click_info">To see more information about house click on image.</h2>
       </div>
-      <div>
-        <a href="generalHouse.php?type=Industrial&id=9">
-          <img class="image" src="industrial3.jpg" alt="Residential Green House">
-        </a>
+      <div class="flex-container">
+      <div class="flexslider">
+        <ul class="slides">
+          <li><a href="generalHouse.php?type=Industrial&id=7">
+              <img class="image-item" src="industrial1.jpg">
+            </a></li>
+          <li>  <a href="generalHouse.php?type=Industrial&id=8">
+            <img class="image-item" src="industrial2.jpg"></a></li>
+          <li><a href="generalHouse.php?type=Industrial&id=9">
+            <img class="image-item" src="industrial3.jpg"></a></li>
+          </ul>
       </div>
+    </div>
       <div class="image-list">
         <ul>
           <li>
