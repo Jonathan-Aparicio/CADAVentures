@@ -28,6 +28,11 @@ body {
 
 }
 
+.nav-item{
+  background-color: yellow;
+  color: black;
+}
+
 .nav-bar > ul > li > a{
   display: block;
   color: white;
