@@ -65,11 +65,11 @@ html[xmlns] .slides { display: block; }
 
 
 /* Theme Styles */
-/*.flexslider {
+.flexslider {
 	position: relative;
 	zoom: 1;
 	padding: 10px;
-	background: #ffffff;
+	background: #DDD;
 
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -86,7 +86,7 @@ html[xmlns] .slides { display: block; }
 	max-width: 960px;
 }
 
-.flexslider .slides { zoom: 1; }*/
+.flexslider .slides { zoom: 1; }
 
 
 
