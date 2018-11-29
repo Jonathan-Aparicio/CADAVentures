@@ -12,7 +12,7 @@
 <body>
   <div class="banner">
     <a href="index.php">
-    <img class="logo" src="logo.png"></a>
+    <img class="logo" src="logo2.png"></a>
   </div>
   <div class="nav-bar" id="nav-bar">
     <ul >
