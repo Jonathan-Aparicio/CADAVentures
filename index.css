@@ -95,9 +95,9 @@ text-decoration:underline;
   color: red;
 }
 
-.images{
+/* .images{
   margin: auto;
-}
+} */
 /* .image{
     display: block;
     margin-top: 50px;
@@ -122,6 +122,12 @@ text-decoration:underline;
   margin: auto;
   position: relative;
 } */
+
+.images{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .image-list{
   float:left;
