@@ -30,7 +30,7 @@ $(document).ready(function () {
           </ul>
       </div>
     </div>
-    <br>
+
     <div class="images">
       <div class="image-list1">
             <a href="generalHouse.php?type=Commercial&id=4"><img class="image-item" src="store1.jpg"></a>
@@ -44,9 +44,7 @@ $(document).ready(function () {
         </ul>
       </div>
     </div>
-  <br>
-  <br>
-  <br>
+
   </div>
     <div class="footer">
       <ul>
