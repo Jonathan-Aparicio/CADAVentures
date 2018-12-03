@@ -32,13 +32,13 @@ $(document).ready(function () {
     </div>
     <br>
     <div class="images">
-      <div class="image-list">
+      <div class="image-list1">
             <a href="generalHouse.php?type=Commercial&id=4"><img class="image-item" src="store1.jpg"></a>
         </div>
-        <div class="image-list">
+        <div class="image-list2">
             <a href="generalHouse.php?type=Commercial&id=5"><img class="image-item" src="store2.jpg"></a>
         </div>
-      <div class="image-list">
+      <div class="image-list3">
             <a href="generalHouse.php?type=Commercial&id=6"><img class="image-item" src="store3.jpg"></a>
       </div>
         </ul>

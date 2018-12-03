@@ -123,14 +123,24 @@ text-decoration:underline;
   position: relative;
 } */
 
-.images{
+/* .images{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+} */
+
+.image-list1{
+  float:left;
+  width: 30%;
 }
 
-.image-list{
-  /* float:left; */
+.image-list1{
+  float:left;
+  width: 30%;
+}
+
+.image-list3{
+  float:left;
   width: 30%;
 }
 
