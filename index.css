@@ -125,6 +125,7 @@ text-decoration:underline;
 
 .image-list{
   float:left;
+  width: 30%;
 }
 
 .gen_body{
