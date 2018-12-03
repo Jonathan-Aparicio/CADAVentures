@@ -41,10 +41,8 @@ $(document).ready(function () {
       <div class="image-list3">
             <a href="generalHouse.php?type=Commercial&id=6"><img class="image-item" src="store3.jpg"></a>
       </div>
-        </ul>
       </div>
     </div>
-
   </div>
     <div class="footer">
       <ul>

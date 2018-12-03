@@ -33,20 +33,15 @@ $(document).ready(function () {
     <br>
     <div class="images">
       <div class="image-list">
-        <ul>
-          <li>
-            <a href="generalHouse.php?type=Industrial&id=7">
-              <img class="image-item" src="industrial1.jpg">
-
-            </a>
-          </li>
-          <li>
+        <div class="image-list1">
+            <a href="generalHouse.php?type=Industrial&id=7"><img class="image-item" src="industrial1.jpg"></a>
+        </div>
+        <div class="image-list2">
             <a href="generalHouse.php?type=Industrial&id=8"><img class="image-item" src="industrial2.jpg"></a>
-          </li>
-          <li>
+        </div>
+        <div class="image-list3">
             <a href="generalHouse.php?type=Industrial&id=9"><img class="image-item" src="industrial3.jpg"></a>
-          </li>
-        </ul>
+        </div>
       </div>
     </div>
   </div>
