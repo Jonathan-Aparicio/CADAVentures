@@ -107,20 +107,24 @@ text-decoration:underline;
     width: 50%;
 } */
 
-.image-list > ul > li {
+/* .image-list > ul > li {
   display: inline;
-}
+} */
 
-.image-list > ul {
+/* .image-list > ul {
   width: 100%;
   margin-left: auto;
   margin: right;
-}
+} */
 
-.image-list{
+/* .image-list{
   width: 100%;
   margin: auto;
   position: relative;
+} */
+
+.image-list{
+  float:left;
 }
 
 .gen_body{

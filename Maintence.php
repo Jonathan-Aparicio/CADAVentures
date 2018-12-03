@@ -9,13 +9,6 @@
       <?php require_once "nav.php";?>
     </div>
     <div class="content">
-      <div class="info">
-        <ul>
-          <li class="apply"><a href="log-in.php">apply</a></li>
-        </ul>
-        <hr class="info-line">
-      </div>
-      <div>
         <h2>TODO: Maintence form</<h2>
       </div>
     </div>

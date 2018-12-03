@@ -33,18 +33,14 @@ $(document).ready(function () {
     <br>
     <div class="images">
       <div class="image-list">
-        <ul>
-          <li>
-            <a href="generalHouse.php?type=Commercial&id=4">
-              <img class="image-item" src="store1.jpg">
-            </a>
-          </li>
-          <li>
+            <a href="generalHouse.php?type=Commercial&id=4"><img class="image-item" src="store1.jpg"></a>
+        </div>
+        <div class="image-list">
             <a href="generalHouse.php?type=Commercial&id=5"><img class="image-item" src="store2.jpg"></a>
-          </li>
-          <li>
+        </div>
+      <div class="image-list">
             <a href="generalHouse.php?type=Commercial&id=6"><img class="image-item" src="store3.jpg"></a>
-          </li>
+      </div>
         </ul>
       </div>
     </div>
