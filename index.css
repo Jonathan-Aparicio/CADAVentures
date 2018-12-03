@@ -29,7 +29,7 @@ body {
 }
 
 .nav-item .active{
-  background-color: yellow;
+  background-color: gray;
   color: black;
 }
 
