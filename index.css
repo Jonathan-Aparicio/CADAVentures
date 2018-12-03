@@ -129,6 +129,10 @@ text-decoration:underline;
   justify-content: space-between;
 } */
 
+.content{
+  height: 100%
+}
+
 .image-list1{
   float:left;
   width: 30%;
