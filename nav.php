@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="slides/css/slider.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
   <script src="slides/js/jquery.flexslider-min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 <body>
   <div class="banner">
