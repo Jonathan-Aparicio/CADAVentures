@@ -130,7 +130,7 @@ text-decoration:underline;
 }
 
 .image-list{
-  float:left;
+  /* float:left; */
   width: 30%;
 }
 
