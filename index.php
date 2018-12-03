@@ -21,7 +21,7 @@ $(document).ready(function () {
       <div class="info">
         <ul>
           <li class="contact-us"><a href="Contact.php">Contact Us</a></li>
-          <li class="main-req">
+          <!-- <li class="main-req">
             <a href="
             <?php if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"]) {
               echo "Maintence.php";
@@ -29,7 +29,7 @@ $(document).ready(function () {
               echo "log-in.php";
               $_SESSION['target'] = "Maintence.php";
             } ?>"
-            >Maintenance Request</a></li>
+            >Maintenance Request</a></li> -->
           <li class="Pay"><a href="PayApp.php">Pay Online</a></li>
         </ul>
         <hr class="info-line">
