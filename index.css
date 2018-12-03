@@ -244,13 +244,13 @@ input[type=text], select {
 }
 
 .footer{
-  position: fixed;
+  position: relative;
    left: 0;
    bottom: 0;
    width: 100%;
    height: 5%;
    background-color: #4483e5;
-   color: white;
+   
    text-align: center;
    display: inline;
 }
