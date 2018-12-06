@@ -44,7 +44,10 @@
       $messages[] = "THIS EMAIL IS ALREADY IN USE";
     }else {
       echo "add user ";
-      $dao->addUser($username,$password);
+      $salt = 'supersaltysalt';
+      $saltedpassword = $password.$salt;
+      $hashedpassword = password_hash($saltedpassword, PASSWORD_BCRYPT);
+      $dao->addUser($username,$hashedpassword);
       header("Location: log-in.php");
       exit;
     }

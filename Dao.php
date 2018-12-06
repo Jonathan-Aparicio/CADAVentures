@@ -66,6 +66,14 @@ class Dao {
 		$stmt->execute();
 		return $stmt->fetch();
 	}
+  public function getPass($username)
+  {
+    $conn = $this->getConnection();
+    $stmt = $conn->prepare("SELECT Password FROM user WHERE Email = :uname");
+    $stmt->bindParam(":uname", $username);
+    $stmt->execute();
+    return $stmt->fetch();
+  }
   public function getAllHouseInfo($id, $type){
     $conn = $this->getConnection();
     $stmt = $conn->prepare("SELECT * FROM Houses WHERE ID = :id && HouseType = :type");

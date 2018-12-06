@@ -29,20 +29,41 @@ if(empty($_POST['password'])){
 }
 
 if($status){
-  if($dao->checkLog($username,$password)){
-    $_SESSION["access_granted"]=true;
-    if(isset($_SESSION['target'])){
-      $target = $_SESSION['target'];
-      header("Location: $target");
-      exit;
-    }else{
-      header("Location: index.php");
-      exit;
+  $salt = 'supersaltysalt';
+  $saltedpassword = $password.$salt;
+  if($dao->checkExists($username)){
+    $dbpass = $dao->getPass($username);
+    if(password_verify($saltedpassword, $dbpass['Password'])){
+      $_SESSION["access_granted"]=true;
+      if(isset($_SESSION['target'])){
+        $target = $_SESSION['target'];
+        header("Location: $target");
+        exit;
+      }else{
+        header("Location: index.php");
+        exit;
+      }
     }
   }else{
     $messages[] = "NOT A VAILD EMAIL OR PASSWORD";
   }
 }
+
+// if($status){
+//   if($dao->checkLog($username,$password)){
+//     $_SESSION["access_granted"]=true;
+//     if(isset($_SESSION['target'])){
+//       $target = $_SESSION['target'];
+//       header("Location: $target");
+//       exit;
+//     }else{
+//       header("Location: index.php");
+//       exit;
+//     }
+//   }else{
+//     $messages[] = "NOT A VAILD EMAIL OR PASSWORD";
+//   }
+// }
  $_SESSION["access_granted"] = false;
  $_SESSION['message']=$messages;
  header("Location:log-in.php");
