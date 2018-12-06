@@ -40,22 +40,22 @@
     <form action="CIApp-Handler.php" class="app" method="POST">
       <h2>Rental Address</h2>
       <div class = "appForm">
-        Address:<br>
+        <label for="address">Address:</label>
         <input type="text" name="address" value="<?= $address; ?>"><br>
-        City:<br>
+        <label for="city">City:</label>
         <input type="text" name="city" value="<?= $city; ?>"><br>
-        State:<br>
+        <label for="state">State:</label>
         <input type="text" name="state" value="<?= $state; ?>"><br>
       </div>
       <h2>Applicant information</h2>
       <div class = "appForm">
-        first name:<br>
+        <label for="first name">first name:</label>
         <input type="text" name="first" value="<?= $first; ?>"><br>
-        Last name:<br>
+        <label for="last name">Last name:</label>
         <input type="text" name="last" value="<?= $last; ?>"><br>
-        Email:<br>
+        <label for="email">Email:</label>
         <input type="email" name="email" value="<?php echo $_SESSION['email']; ?>"><br>
-        Phone Number:
+        <label for="phone number">Phone Number:
         <input type="number" name="phone" value="<?= $phone; ?>"><br>
       </div>
       <input type="submit"  value="Submit">
